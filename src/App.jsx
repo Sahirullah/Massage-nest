@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/logo.png'
 import heroSec from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png'
 import img1 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/1.jpg'
@@ -27,7 +28,7 @@ function App() {
           <nav className="nav">
             <ul>
               <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT US</a></li>
+              <li><Link to="/about">ABOUT US</Link></li>
               <li><ServiceDropdown /></li>
               <li><a href="#packages">OUR PACKAGES</a></li>
               <li><a href="#blog">OUR BLOG</a></li>
@@ -266,42 +267,53 @@ function App() {
       </section>
 
       <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-col">
-            <div className="footer-logo">
-              <img src={logo} alt="Logo" />
+        <div className="footer-wrapper">
+          <div className="footer-main">
+            <div className="footer-logo-section">
+              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
+              <h3>Shukran Home Spa</h3>
+              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
-            <p>Massage Nest brings luxury spa services to your home with professional therapists and premium care.</p>
-          </div>
-          <div className="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#about">ABOUT US</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Thai Massage</a></li>
-              <li><a href="#">Deep Tissue</a></li>
-              <li><a href="#">Hot Stone</a></li>
-              <li><a href="#">Aromatherapy</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>Social Links</h4>
-            <ul className="social-links">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">WhatsApp</a></li>
-            </ul>
+
+            <div className="footer-links-section">
+              <div className="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/about">About Us</Link></li>
+                  <li><a href="#packages">Our Packages</a></li>
+                  <li><a href="#blog">Our Blogs</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <div className="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="#">Deep Tissue Massage</a></li>
+                  <li><a href="#">Mobile Massage</a></li>
+                  <li><a href="#">Sports Massage</a></li>
+                  <li><a href="#">Couples Massage</a></li>
+                </ul>
+              </div>
+
+              <div className="footer-col">
+                <h4>Get In Touch</h4>
+                <p><a href="tel:+971504480363">📞 +971504480363</a></p>
+                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p>📍 Address: Dubai</p>
+                <div className="social-links">
+                  <a href="#facebook">f</a>
+                  <a href="#instagram">📷</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className="footer-bottom">
-          <p>&copy; 2024 Massage Nest. All rights reserved. | Powered by Massage Nest</p>
+          <p>&copy;2024 Shukran Home Spa. All Rights Reserved.</p>
+          <p>Website Development By | Sahirullah</p>
         </div>
       </footer>
     </>
