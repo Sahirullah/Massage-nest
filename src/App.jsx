@@ -12,6 +12,7 @@ import img9 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files
 import wellnessIcon from './assets/wellness.png'
 import beautyIcon from './assets/beauty.png'
 import massageIcon from './assets/massage.png'
+import ServiceDropdown from './components/ServiceDropdown'
 import './App.css'
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
             <ul>
               <li><a href="#home">HOME</a></li>
               <li><a href="#about">ABOUT US</a></li>
-              <li><a href="#services">OUR SERVICES</a></li>
+              <li><ServiceDropdown /></li>
               <li><a href="#packages">OUR PACKAGES</a></li>
               <li><a href="#blog">OUR BLOG</a></li>
               <li><a href="#contact">CONTACT US</a></li>
