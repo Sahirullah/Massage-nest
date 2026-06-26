@@ -607,61 +607,132 @@ body {
   margin: 0 auto;
 }
 
-.appointment-container h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  color: #205B4F;
-  margin-bottom: 2.5rem;
+.appointment-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.appointment-left {
+  padding-right: 2rem;
+}
+
+.appointment-left h4 {
+  font-size: 0.75rem;
+  color: #d4af37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
   font-weight: 600;
+}
+
+.appointment-left h2 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: Georgia, serif;
+}
+
+.appointment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  min-width: 30px;
+}
+
+.info-item h4 {
+  font-size: 0.75rem;
+  color: #d4af37;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.info-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.2rem 0;
+}
+
+.info-item a {
+  color: #205B4F;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.appointment-right {
+  padding-left: 2rem;
 }
 
 .appointment-form {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+.form-row:last-of-type {
+  grid-template-columns: 1fr;
 }
 
 .appointment-form input,
-.appointment-form select,
 .appointment-form textarea {
-  padding: 0.9rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 0.9rem 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  background: transparent;
+  width: 100%;
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  color: #999;
 }
 
 .appointment-form input:focus,
-.appointment-form select:focus,
 .appointment-form textarea:focus {
   outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+  border-bottom-color: #d4af37;
+  background: transparent;
 }
 
 .appointment-form textarea {
-  grid-column: 1 / -1;
   resize: vertical;
+  grid-column: 1 / -1;
 }
 
 .submit-btn {
   background: #d4af37;
   color: #205B4F;
   border: none;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-size: 0.9rem;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 0;
   cursor: pointer;
   letter-spacing: 1px;
   transition: all 0.3s;
-  align-self: center;
-  min-width: 250px;
+  align-self: flex-start;
+  min-width: 200px;
 }
 
 .submit-btn:hover {

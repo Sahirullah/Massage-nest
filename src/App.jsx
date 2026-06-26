@@ -210,33 +210,58 @@ function App() {
 
       <section className="appointment">
         <div className="appointment-container">
-          <h2>Make an Appointment</h2>
-          <form className="appointment-form">
-            <div className="form-row">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
+          <div className="appointment-wrapper">
+            <div className="appointment-left">
+              <h4>WHAT ARE YOU WAITING FOR...</h4>
+              <h2>Make an Appointment</h2>
+              
+              <div className="appointment-info">
+                <div className="info-item">
+                  <span className="info-icon">📍</span>
+                  <div>
+                    <h4>OUR LOCATION</h4>
+                    <p>Sharjah and Dubai</p>
+                  </div>
+                </div>
+                
+                <div className="info-item">
+                  <span className="info-icon">⏰</span>
+                  <div>
+                    <h4>OPENING HOURS</h4>
+                    <p>11am to 10pm</p>
+                  </div>
+                </div>
+                
+                <div className="info-item">
+                  <span className="info-icon">☎️</span>
+                  <div>
+                    <h4>CONTACT</h4>
+                    <p><a href="tel:+971504480363">+971504480363</a></p>
+                    <p><a href="mailto:shukrianhomespa@gmail.com">shukrianhomespa@gmail.com</a></p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="form-row">
-              <input type="tel" placeholder="Phone Number" required />
-              <input type="date" required />
+
+            <div className="appointment-right">
+              <form className="appointment-form">
+                <div className="form-row">
+                  <input type="text" placeholder="Your Name*" required />
+                  <input type="text" placeholder="Last Name*" required />
+                </div>
+                <div className="form-row">
+                  <input type="tel" placeholder="Phone Number*" required />
+                </div>
+                <div className="form-row">
+                  <input type="email" placeholder="Email*" required />
+                </div>
+                <div className="form-row">
+                  <textarea placeholder="Message" rows="5"></textarea>
+                </div>
+                <button type="submit" className="submit-btn">Submit</button>
+              </form>
             </div>
-            <div className="form-row">
-              <select required>
-                <option value="">Select Service</option>
-                <option value="thai">Thai Massage</option>
-                <option value="deep">Deep Tissue</option>
-                <option value="couple">Couple Massage</option>
-              </select>
-              <select required>
-                <option value="">Select Time</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-                <option value="evening">Evening</option>
-              </select>
-            </div>
-            <textarea placeholder="Special Requests" rows="4"></textarea>
-            <button type="submit" className="submit-btn">BOOK APPOINTMENT</button>
-          </form>
+          </div>
         </div>
       </section>
 
