@@ -13,6 +13,7 @@ import img9 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files
 import wellnessIcon from './assets/wellness.png'
 import beautyIcon from './assets/beauty.png'
 import massageIcon from './assets/massage.png'
+import whatsappBtn from './assets/Whatsapp-btn.avif'
 import ServiceDropdown from './components/ServiceDropdown'
 import './App.css'
 
@@ -312,10 +313,14 @@ function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2024 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>
+
+      <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="whatsapp-btn">
+        <img src={whatsappBtn} alt="Chat on WhatsApp" />
+      </a>
     </>
   )
 }
