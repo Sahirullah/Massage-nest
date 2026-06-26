@@ -8,6 +8,7 @@ import img5 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files
 import img6 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/6.jpg'
 import img7 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/7.jpg'
 import img8 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/8.jpg'
+import img9 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/9.jpg'
 import './App.css'
 
 function App() {
@@ -110,28 +111,29 @@ function App() {
         <div className="why-choose-wrapper">
           <div className="why-choose-container">
             <div className="why-choose-content">
-              <h2>Why Choose Massage Nest for the Best Massage At Your Home?</h2>
+              <h2>Why Choose Shukran Home Spa for Your Wellness Needs?</h2>
+              <h2 style={{fontSize: '2rem', color: '#1a1a1a', marginTop: '0', marginBottom: '1rem', fontWeight: 600, lineHeight: 1.2}}>Give yourself the well-deserved treatment</h2>
               <p>Experience the expertise of our professional therapists who specialize in delivering unique spa experiences tailored to your needs. Let our skilled hands melt away the stresses of your day, leaving you feeling refreshed, rejuvenated, and renewed.</p>
               <p>Indulge in a variety of massage options designed to address every ache, pain, and tension. From Thai Massage to Deep Tissue Massage, our range of services caters to all your relaxation needs.</p>
               <button className="book-btn">BOOK NOW</button>
             </div>
 
             <div className="why-choose-image">
-              <img src={img4} alt="Professional Massage" />
-              
-              <div className="benefits">
-                <div className="benefit-item">
-                  <div className="benefit-icon">🌿</div>
-                  <h3>Wellness</h3>
-                </div>
-                <div className="benefit-item">
-                  <div className="benefit-icon">✨</div>
-                  <h3>Beauty</h3>
-                </div>
-                <div className="benefit-item">
-                  <div className="benefit-icon">🤝</div>
-                  <h3>Massage</h3>
-                </div>
+              <img src={img9} alt="Professional Massage" />
+            </div>
+
+            <div className="benefits">
+              <div className="benefit-item">
+                <div className="benefit-icon">🌿</div>
+                <h3>Wellness</h3>
+              </div>
+              <div className="benefit-item">
+                <div className="benefit-icon">✨</div>
+                <h3>Beauty</h3>
+              </div>
+              <div className="benefit-item">
+                <div className="benefit-icon">🤝</div>
+                <h3>Massage</h3>
               </div>
             </div>
           </div>
