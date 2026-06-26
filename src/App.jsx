@@ -14,26 +14,31 @@ function App() {
   return (
     <>
       <header className="header" style={{backgroundImage: `url(${heroSec})`}}>
-        <div className="header-container">
+        <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Massage Nest Logo" className="logo" />
+            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
+            <span className="logo-text">Shukran Home Spa</span>
           </div>
           <nav className="nav">
             <ul>
               <li><a href="#home">HOME</a></li>
-              <li><a href="#services">SERVICES</a></li>
               <li><a href="#about">ABOUT US</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-              <li><a href="#book" className="login-btn">LOGIN</a></li>
+              <li><a href="#services">OUR SERVICES</a></li>
+              <li><a href="#packages">OUR PACKAGES</a></li>
+              <li><a href="#blog">OUR BLOG</a></li>
+              <li><a href="#contact">CONTACT US</a></li>
+              <li><a href="#book" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
         </div>
 
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>Relax with Our Premium Massage Home Service in Dubai</h1>
-            <p>Experience the ultimate relaxation and rejuvenation with our professional massage therapists. We bring luxury and comfort to your home.</p>
-            <button className="cta-button">BOOK NOW</button>
+        <div className="hero-section">
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1>Relax with Our Premium Massage Home Service in Dubai</h1>
+              <p>Shukran Home Spa is your oasis of calm in the bustling city of Dubai. Escape the daily chaos and immerse yourself in moments of pure relaxation with our top-notch massage services.</p>
+              <button className="appointment-btn">BOOK AN APPOINTMENT →</button>
+            </div>
           </div>
         </div>
       </header>
