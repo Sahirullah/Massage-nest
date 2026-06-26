@@ -9,6 +9,9 @@ import img6 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files
 import img7 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/7.jpg'
 import img8 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/8.jpg'
 import img9 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/9.jpg'
+import wellnessIcon from './assets/wellness.png'
+import beautyIcon from './assets/beauty.png'
+import massageIcon from './assets/massage.png'
 import './App.css'
 
 function App() {
@@ -124,15 +127,15 @@ function App() {
 
             <div className="benefits">
               <div className="benefit-item">
-                <div className="benefit-icon">🌿</div>
+                <img src={wellnessIcon} alt="Wellness" className="benefit-icon" />
                 <h3>Wellness</h3>
               </div>
               <div className="benefit-item">
-                <div className="benefit-icon">✨</div>
+                <img src={beautyIcon} alt="Beauty" className="benefit-icon" />
                 <h3>Beauty</h3>
               </div>
               <div className="benefit-item">
-                <div className="benefit-icon">🤝</div>
+                <img src={massageIcon} alt="Massage" className="benefit-icon" />
                 <h3>Massage</h3>
               </div>
             </div>

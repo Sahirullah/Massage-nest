@@ -437,6 +437,8 @@ body {
   font-size: 2rem;
   margin-bottom: 0.8rem;
   display: block;
+  width: 50px;
+  height: 50px;
 }
 
 .benefit-item h3 {

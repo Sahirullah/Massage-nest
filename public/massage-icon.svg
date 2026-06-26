@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g>
+    <path fill="#FCD34D" stroke="#000" stroke-width="2" d="M50 20 Q60 30 55 45 Q50 50 45 45 Q40 30 50 20 Z"/>
+    <path fill="#FCD34D" stroke="#000" stroke-width="2" d="M35 50 Q25 55 25 70 L35 75 Q35 60 40 50 Z"/>
+    <path fill="#FCD34D" stroke="#000" stroke-width="2" d="M65 50 Q75 55 75 70 L65 75 Q65 60 60 50 Z"/>
+    <path fill="#FCD34D" stroke="#000" stroke-width="2" d="M50 50 L45 70 L55 70 Z"/>
+  </g>
+</svg>
