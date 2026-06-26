@@ -147,43 +147,56 @@ function App() {
 
       <section className="pricing">
         <div className="pricing-container">
-          <h2>Our Home Massage Service Packages Class</h2>
+          <h4>SHUKRAN HOME SPA</h4>
+          <h2>Our Home Massage Service Packages Plans</h2>
           <div className="pricing-grid">
             <div className="pricing-card">
-              <h3>30 MIN</h3>
-              <p className="price">AED 99</p>
-              <ul>
-                <li>Swedish Massage</li>
-                <li>Thai Massage</li>
-                <li>Deep Tissue</li>
-              </ul>
+              <h3>Full Body Relaxation Massage<span className="price">149 AED</span></h3>
+              <span className="duration">(60 min 149 AED/ 90 min 189 AED)</span>
             </div>
             <div className="pricing-card">
-              <h3>60 MIN</h3>
-              <p className="price">AED 189</p>
-              <ul>
-                <li>All 30 min services</li>
-                <li>Hot Stone Massage</li>
-                <li>Aromatherapy</li>
-              </ul>
+              <h3>Thai Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
             </div>
             <div className="pricing-card">
-              <h3>90 MIN</h3>
-              <p className="price">AED 269</p>
-              <ul>
-                <li>All 60 min services</li>
-                <li>Reflexology</li>
-                <li>Premium oils</li>
-              </ul>
+              <h3>Swedish Massage<span className="price">149 AED</span></h3>
+              <span className="duration">(60 min 149 AED / 90 min 189 AED)</span>
             </div>
             <div className="pricing-card">
-              <h3>120 MIN</h3>
-              <p className="price">AED 349</p>
-              <ul>
-                <li>All services</li>
-                <li>Facial massage</li>
-                <li>Spa package</li>
-              </ul>
+              <h3>Deep Tissue Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Maderotherapy Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Hot Oil Relaxation Massage<span className="price">175 AED</span></h3>
+              <span className="duration">(60 min 175 AED / 90 min 225 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Lymphatic Drainage Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Couple Relaxation Massage<span className="price">299 AED</span></h3>
+              <span className="duration">(60 min couple massage 299 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Sport Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Lomi Lomi Massage<span className="price">149 AED</span></h3>
+              <span className="duration">(60 min 149 AED / 90 min 199 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Brazilian Slimming Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
+            </div>
+            <div className="pricing-card">
+              <h3>Shiatsu Massage<span className="price">199 AED</span></h3>
+              <span className="duration">(60 min 199 AED / 90 min 249 AED)</span>
             </div>
           </div>
         </div>

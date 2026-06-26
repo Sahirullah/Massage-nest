@@ -386,59 +386,90 @@ body {
 
 /* Pricing Section */
 .pricing {
-  background: linear-gradient(135deg, #6b6b6b 0%, #4a4a4a 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png') center/cover;
   padding: 5rem 5%;
   width: 100%;
   position: relative;
+  min-height: 600px;
 }
 
 .pricing-container {
-  max-width: none;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
 
+.pricing-container h4 {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .pricing-container h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
-  margin-bottom: 3rem;
-  font-weight: 600;
+  margin-bottom: 4rem;
+  font-weight: 400;
+  font-family: Georgia, serif;
 }
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem 6rem;
 }
 
 .pricing-card {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
   color: white;
   transition: all 0.3s;
 }
 
 .pricing-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
+  transform: none;
+  background: transparent;
 }
 
 .pricing-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.pricing-card h3::before {
+  content: '';
+  flex: 1;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
 }
 
 .pricing-card .price {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: #d4af37;
+  display: inline;
+  white-space: nowrap;
+}
+
+.pricing-card .duration {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.3rem;
+  margin-left: 0;
+  font-weight: 400;
 }
 
 .pricing-card ul {
@@ -447,13 +478,9 @@ body {
 }
 
 .pricing-card li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.9rem;
-}
-
-.pricing-card li:last-child {
+  padding: 0;
   border-bottom: none;
+  font-size: 0.9rem;
 }
 
 /* Appointment Section */
@@ -542,7 +569,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 3rem;
-  max-width: 1400px;
+  max-width: none;
   margin: 0 auto 3rem;
 }
 
