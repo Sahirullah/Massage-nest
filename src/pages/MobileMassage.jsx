@@ -5,6 +5,12 @@ import img21 from '../assets/Luxury Mobile Massages.jpg'
 import img22 from '../assets/Tissue Techniques.jpg'
 import img23 from '../assets/Mobile Massages.jpg'
 import whatsappBtn from '../assets/Whatsapp-btn.avif'
+import whyChoose1 from '../assets/Why-Choose/1.png'
+import whyChoose2 from '../assets/Why-Choose/2.png'
+import whyChoose3 from '../assets/Why-Choose/3.png'
+import whyChoose4 from '../assets/Why-Choose/4.png'
+import whyChoose5 from '../assets/Why-Choose/5.png'
+import whyChoose6 from '../assets/Why-Choose/6.png'
 import ServiceDropdown from '../components/ServiceDropdown'
 import MobileMenu from '../components/MobileMenu'
 import './MobileMassage.css'
@@ -71,32 +77,32 @@ export default function MobileMassage() {
             
             <div className="features-grid">
               <div className="feature-card" data-aos="fade-up" data-aos-delay="100">
-                <div className="feature-icon">👨‍⚕️</div>
+                <img src={whyChoose1} alt="Licensed Therapists" className="feature-icon" />
                 <h4>Licensed, Experienced Therapists</h4>
                 <p>Each member of our team brings professional credentials along with knowledge of techniques like Swedish, Deep Tissue, and Thai massage.</p>
               </div>
               <div className="feature-card" data-aos="fade-up" data-aos-delay="150">
-                <div className="feature-icon">👥</div>
+                <img src={whyChoose2} alt="Personalized Sessions" className="feature-icon" />
                 <h4>Personalized Sessions</h4>
                 <p>We tailor every massage to your problem areas, pressure preferences, and requested techniques.</p>
               </div>
               <div className="feature-card" data-aos="fade-up" data-aos-delay="200">
-                <div className="feature-icon">🧴</div>
+                <img src={whyChoose3} alt="Quality Supplies" className="feature-icon" />
                 <h4>Quality Massage Oils & Supplies</h4>
                 <p>Our therapists bring premium massage oils, lotions, scents, towels, and more.</p>
               </div>
               <div className="feature-card" data-aos="fade-up" data-aos-delay="250">
-                <div className="feature-icon">📱</div>
+                <img src={whyChoose4} alt="Easy Booking" className="feature-icon" />
                 <h4>Easy Online Booking</h4>
                 <p>Our user-friendly system makes scheduling effortless 24/7.</p>
               </div>
               <div className="feature-card" data-aos="fade-up" data-aos-delay="300">
-                <div className="feature-icon">🏢</div>
+                <img src={whyChoose5} alt="Flexible Scheduling" className="feature-icon" />
                 <h4>Flexible Scheduling</h4>
                 <p>Session lengths range from 30 minutes to 120 minutes. Book on your schedule.</p>
               </div>
               <div className="feature-card" data-aos="fade-up" data-aos-delay="350">
-                <div className="feature-icon">💳</div>
+                <img src={whyChoose6} alt="Payment Options" className="feature-icon" />
                 <h4>Payment Options</h4>
                 <p>We accept credit cards and cash. Special package rates are available!</p>
               </div>

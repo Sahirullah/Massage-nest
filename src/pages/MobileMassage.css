@@ -184,9 +184,11 @@
 }
 
 .feature-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
   display: block;
+  object-fit: contain;
 }
 
 .feature-card h4 {
@@ -343,9 +345,11 @@
 }
 
 .feature-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
   display: block;
+  object-fit: contain;
 }
 
 .feature-card h3 {
@@ -846,7 +850,8 @@
   }
 
   .feature-icon {
-    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
   }
 
   .feature-card h4 {
@@ -873,7 +878,8 @@
   }
 
   .feature-icon {
-    font-size: 2rem;
+    width: 60px;
+    height: 60px;
     margin-bottom: 0.8rem;
   }
 
