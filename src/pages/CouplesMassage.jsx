@@ -38,31 +38,31 @@ export default function CouplesMassage() {
       </header>
 
       {/* Main Content Section */}
-      <section className="service-content">
+      <section className="service-content" data-aos="fade-up">
         <div className="service-container">
           
           {/* Section 1: Deepen Your Bond */}
-          <div className="intro-section">
+          <div className="intro-section" data-aos="fade-up">
             <p className="intro-label">Deepen Your Bond with a Relaxing Couple Massage at Home in Dubai</p>
-            <h2>Enhance the Connection with Your Partner through Click4Massage's Couples Massage</h2>
+            <h2 data-aos="zoom-in">Enhance the Connection with Your Partner through Click4Massage's Couples Massage</h2>
             <p className="intro-description">Looking for some quality time alone with your significant other? Look no further than Click4Massage for the ultimate couple's massage experience. Our couples' massage is expertly crafted to help partners relax and rejuvenate together, fostering a deeper connection and addressing any tensions that may arise.</p>
             <p className="intro-description">This luxurious experience, akin to those offered by premier couple spas in Dubai, provides the perfect opportunity to bond while indulging in a well-deserved treat. Many couples find the massage to be a sensual experience, paving the way for intimate moments later on.</p>
           </div>
 
           {/* Section 2: How Our Dubai Couples Massage */}
-          <div className="content-block center-text">
-            <h2>How Our Dubai Couples Massage Can Revitalize Your Relationship?</h2>
+          <div className="content-block center-text" data-aos="slide-right">
+            <h2 data-aos="zoom-in">How Our Dubai Couples Massage Can Revitalize Your Relationship?</h2>
             <p>A disagreement with your partner can cast a shadow over your entire weekend, leaving you feeling disconnected and distressed. That's where our couple's massage in Dubai works its magic.</p>
             <p>Whether you're struggling to find time together, dealing with personal issues, or simply craving intimacy, our couple's massage at Click4Massage can make a world of difference. With side-by-side massage tables, you and your partner can immerse yourselves in a stress-relieving, muscle-soothing experience that strengthens your bond.</p>
           </div>
 
           {/* Section 3: Tailored Experience with Image */}
-          <div className="content-block">
-            <div className="content-image">
+          <div className="content-block" data-aos="slide-left">
+            <div className="content-image" data-aos="zoom-in">
               <img src={imgCouple} alt="Tailored Couple's Massage" />
             </div>
             <div className="content-text">
-              <h2>Tailored Couple's Massage Experience in Dubai</h2>
+              <h2 data-aos="zoom-in">Tailored Couple's Massage Experience in Dubai</h2>
               <p>At Click4Massage, we believe in personalized pampering. Choose from our range of massages, whether you're in need of relaxation, deep tissue work, or the comforting warmth of hot stones.</p>
               <p>You and your partner can customize this experience further by adjusting the pressure, targeting specific areas, and communicating any health concerns to our skilled therapists.</p>
             </div>
@@ -72,11 +72,11 @@ export default function CouplesMassage() {
       </section>
 
       {/* CTA Section */}
-      <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }}>
+      <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }} data-aos="fade-up">
         <div className="cta-overlay"></div>
         <div className="cta-content">
           <h3 className="section-label-white">CLICK4MASSAGE</h3>
-          <h2>Book Your Ultimate Couple's Massage At Home In Dubai Today</h2>
+          <h2 data-aos="zoom-in">Book Your Ultimate Couple's Massage At Home In Dubai Today</h2>
           <p>A massage isn't just a treatment—it's an experience that floods your body with happiness-inducing chemicals like oxytocin, serotonin, and dopamine, leaving you feeling blissfully relaxed. Our couple's massage in Dubai goes beyond mere relaxation, offering unparalleled pain relief and emotional rejuvenation for couples. If you're looking to strengthen your bond while reaping the myriad benefits of massage, don't hesitate to book a couple's massage with Click4Massage today. Our expert therapists will cater to your every need and desire, ensuring a truly satisfying experience. Don't delay—call us now to schedule your appointment.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
         </div>

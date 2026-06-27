@@ -40,41 +40,41 @@ export default function RelaxationMassage() {
       </header>
 
       {/* Main Content Section */}
-      <section className="service-content">
+      <section className="service-content" data-aos="fade-up">
         <div className="service-container">
           
           {/* Section 1: Indulge in Tranquility */}
-          <div className="content-block">
+          <div className="content-block" data-aos="slide-right">
             <div className="content-text">
-              <h2>Indulge in Tranquility with Relaxation Massage in Dubai</h2>
+              <h2 data-aos="zoom-in">Indulge in Tranquility with Relaxation Massage in Dubai</h2>
               <p>In today's fast-paced world, stress can take on an unrelenting presence in our daily lives. With the countless demands of life, finding moments of relaxation is a must for mental well-being. Enter relaxation massage—a restorative art form that helps calm the mind, body and spirit, offering respite from the pressures of daily life. Through gentle kneading, long flowing strokes, and therapeutic techniques, our therapists will help you achieve ultimate relaxation, enhancing both circulation and comfort for the mental system.</p>
               <p>At Click4Massage, we understand the need for relaxation and rejuvenation. Our relaxation massage therapy services are designed to provide exactly that—a therapeutic escape within your own home.</p>
               <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="service-btn">BOOK NOW</a>
             </div>
-            <div className="content-image">
+            <div className="content-image" data-aos="zoom-in">
               <img src={imgIndulge} alt="Indulge in Tranquility" />
             </div>
           </div>
 
           {/* Section 2: Experience Serenity */}
-          <div className="content-block">
-            <div className="content-image">
+          <div className="content-block" data-aos="slide-left">
+            <div className="content-image" data-aos="zoom-in">
               <img src={imgSerenity} alt="Experience Serenity" />
             </div>
             <div className="content-text">
-              <h2>Experience Serenity with Our Relaxation Massage in Dubai</h2>
+              <h2 data-aos="zoom-in">Experience Serenity with Our Relaxation Massage in Dubai</h2>
               <p>Our skilled therapists employ gentle, deliberate movements to create a tranquil atmosphere, allowing you to unwind fully and let go of stress.</p>
               <p>Focusing on each pose to direct and release tension—such as the neck, shoulders, and back—our therapist will help you achieve the serenity and rejuvenation you're seeking in every massage session.</p>
             </div>
           </div>
 
           {/* Section 3: Unlock the Convenience */}
-          <div className="content-block">
+          <div className="content-block" data-aos="slide-right">
             <div className="content-text">
-              <h2>Unlock the Convenience of At-Home Relaxation in Dubai</h2>
+              <h2 data-aos="zoom-in">Unlock the Convenience of At-Home Relaxation in Dubai</h2>
               <p>Imagine the luxury of indulging in a rejuvenating massage in the privacy of your own home. With Click4Massage, we understand the challenging of modern life, which is why we bring the spa experience directly to you. No need to travel; no need to book appointments months in advance. With Click4Massage's at-home relaxation massage services, you'll experience the ultimate convenience and comfort of a therapeutic massage without having to leave home. Say goodbye to stress and tension—simply unwind at home, and watch as your worries melt away.</p>
             </div>
-            <div className="content-image">
+            <div className="content-image" data-aos="zoom-in">
               <img src={imgConvenience} alt="Unlock the Convenience" />
             </div>
           </div>
@@ -83,11 +83,11 @@ export default function RelaxationMassage() {
       </section>
 
       {/* CTA Section */}
-      <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }}>
+      <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }} data-aos="fade-up">
         <div className="cta-overlay"></div>
         <div className="cta-content">
           <p className="section-label-white">CLICK4MASSAGE</p>
-          <h2>Book Your Serenity Session Today!</h2>
+          <h2 data-aos="zoom-in">Book Your Serenity Session Today!</h2>
           <p>If the weight of the world has you feeling weary, it's time to prioritize your well-being and indulge with a session of relaxation massage services. Our dedicated therapists at Click4Massage are trained to ensure you receive the ultimate benefits of Maderotherapy. Book your appointment with us today and experience that only Click4Massage can deliver.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
         </div>
