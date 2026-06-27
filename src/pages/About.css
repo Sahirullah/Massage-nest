@@ -1,131 +1,218 @@
-/* About Page Styles */
+/* About Page Header */
 .about-header {
-  background: #205B4F;
+  background: linear-gradient(135deg, #205B4F 0%, #1a4a3f 100%);
   color: white;
-  padding: 2rem 5%;
-  min-height: 250px;
+  padding: 6rem 5%;
+  text-align: center;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.about-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.about-logo-section {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.about-logo {
-  height: 40px;
-  width: auto;
-}
-
-.about-logo-text {
-  color: #d4af37;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.about-nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+  justify-content: center;
   align-items: center;
 }
 
-.about-nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.about-nav-menu a:hover {
-  color: #d4af37;
-}
-
-.book-btn {
-  border: 2px solid #d4af37;
-  color: #d4af37;
-  padding: 0.6rem 1.5rem;
-  border-radius: 3px;
-  background: transparent;
-  transition: all 0.3s;
-}
-
-.book-btn:hover {
-  background: #d4af37;
-  color: #205B4F;
-}
-
-.about-hero {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.about-hero h4 {
-  font-size: 0.75rem;
+.about-header-content h4 {
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-weight: 600;
+  margin: 0;
 }
 
-.about-hero h1 {
-  font-size: 3rem;
+.about-header-content h1 {
+  font-size: 3.5rem;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   font-family: Georgia, serif;
+  margin: 0;
 }
 
-/* About Intro Section */
-.about-intro {
+/* Slideshow Section */
+.about-section {
   background: white;
-  padding: 4rem 5%;
+  padding: 0;
   width: 100%;
 }
 
 .about-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  align-items: stretch;
+  width: 100%;
 }
 
-.about-intro-content {
+.about-text {
+  display: none;
+}
+
+.about-text h2 {
+  font-size: 1.2rem;
+  color: #205B4F;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about-text p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+/* Slideshow Container */
+.about-slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  min-height: 600px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: #f5f5f5;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.slides-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slides-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slides-wrapper img.active {
+  opacity: 1;
+}
+
+/* Slide Arrows */
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.slide-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slide-arrow.prev {
+  left: 15px;
+}
+
+.slide-arrow.next {
+  right: 15px;
+}
+
+/* Slide Dots */
+.slide-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: white;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Content Section */
+.about-content {
+  background: white;
+  padding: 5rem 5%;
+  width: 100%;
+}
+
+.about-content-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
 }
 
-.about-intro-text h2 {
-  font-size: 1.2rem;
+.about-content-text h2 {
+  font-size: 0.95rem;
   color: #205B4F;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.about-intro-text p {
-  font-size: 0.9rem;
+.about-content-text h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-family: Georgia, serif;
+}
+
+.about-content-text p {
+  font-size: 0.95rem;
   color: #666;
   line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   text-align: justify;
 }
 
-.explore-btn {
+.contact-btn {
   background: #d4af37;
   color: white;
   border: none;
@@ -137,259 +224,61 @@
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
-.explore-btn:hover {
+.contact-btn:hover {
   background: #c99e2e;
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
-.about-intro-image {
+.about-content-image {
   text-align: center;
 }
 
-.about-intro-image img {
+.about-content-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Mission & Vision Section */
-.about-mission-vision {
-  background: white;
-  padding: 4rem 5%;
-  width: 100%;
-}
-
-.mission-vision-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.mission-card,
-.vision-card {
-  text-align: center;
-  padding: 2rem;
-}
-
-.mission-card h3,
-.vision-card h3 {
-  font-size: 1.2rem;
-  color: #205B4F;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.mission-card p,
-.vision-card p {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.8;
-}
-
-/* Expertise Section */
-.about-expertise {
-  background: white;
-  padding: 4rem 5%;
-  width: 100%;
-  border-top: 1px solid #f0f0f0;
-}
-
-.about-expertise h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  color: #205B4F;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.expertise-subtitle {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #999;
-  margin-bottom: 3rem;
-}
-
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-.expertise-card {
-  text-align: center;
-  padding: 2rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-}
-
-.expertise-card h4 {
-  font-size: 0.95rem;
-  color: #205B4F;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.expertise-card p {
-  font-size: 0.85rem;
-  color: #999;
-}
-
-/* CTA Section */
-.about-cta {
-  background: linear-gradient(rgba(32, 91, 79, 0.8), rgba(32, 91, 79, 0.8)), 
-              url('../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png') center/cover;
-  padding: 5rem 5%;
-  text-align: center;
-  color: white;
-  width: 100%;
-}
-
-.about-cta-content h4 {
-  font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.about-cta-content h2 {
-  font-size: 2.2rem;
-  color: white;
-  margin-bottom: 1.5rem;
-  font-weight: 400;
-  font-family: Georgia, serif;
-}
-
-.about-cta-content p {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-btn {
-  background: white;
-  color: #205B4F;
-  border: none;
-  padding: 0.9rem 2rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.cta-btn:hover {
-  background: #d4af37;
-  color: white;
-}
-
-/* Footer */
-.about-footer {
-  background: #205B4F;
-  color: white;
-  padding: 3rem 5% 1rem;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-section h4 {
-  color: #d4af37;
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-.footer-section ul {
-  list-style: none;
-}
-
-.footer-section ul li {
-  margin-bottom: 0.7rem;
-}
-
-.footer-section a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: color 0.3s;
-}
-
-.footer-section a:hover {
-  color: #d4af37;
-}
-
-.footer-section p {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6;
-  margin-bottom: 0.7rem;
-}
-
-.footer-logo {
-  height: 40px;
-  margin-bottom: 1rem;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(212, 175, 55, 0.3);
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.8rem;
-}
-
-.footer-bottom p {
-  margin: 0.5rem 0;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-  .about-nav {
-    flex-direction: column;
-    gap: 1.5rem;
+  .about-header {
+    padding: 3rem 2rem;
+    min-height: 200px;
   }
 
-  .about-nav-menu {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .about-hero h1 {
+  .about-header-content h1 {
     font-size: 2rem;
   }
 
-  .about-intro-content {
-    grid-template-columns: 1fr;
+  .slideshow-container {
+    height: 400px;
   }
 
-  .mission-vision-grid {
+  .about-content-container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  .expertise-grid {
-    grid-template-columns: 1fr;
+  .about-content-text h3 {
+    font-size: 1.8rem;
   }
 
-  .footer-content {
-    grid-template-columns: 1fr;
+  .slide-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .slide-arrow.prev {
+    left: 10px;
+  }
+
+  .slide-arrow.next {
+    right: 10px;
   }
 }
