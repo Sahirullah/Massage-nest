@@ -4,6 +4,9 @@ import heroSec from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_f
 import img1 from '../assets/Sports1.jpg'
 import img2 from '../assets/Sports2.jpg'
 import whatsappBtn from '../assets/Whatsapp-btn.avif'
+import sportsMassage1 from '../assets/Sports-Massage/1.png'
+import sportsMassage2 from '../assets/Sports-Massage/2.png'
+import sportsMassage3 from '../assets/Sports-Massage/3.png'
 import ServiceDropdown from '../components/ServiceDropdown'
 import MobileMenu from '../components/MobileMenu'
 import './SportsMassage.css'
@@ -70,35 +73,21 @@ export default function SportsMassage() {
             
             <div className="features-grid">
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="0">
-                <div className="feature-icon">💪</div>
+                <img src={sportsMassage1} alt="Enhanced Flexibility" className="feature-icon" />
                 <h4>Enhanced Flexibility</h4>
                 <p>Sports massage increases range of motion and muscle elasticity, helping you achieve peak flexibility and powerful motion.</p>
               </div>
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="100">
-                <div className="feature-icon">⚡</div>
+                <img src={sportsMassage2} alt="Stress Reduction" className="feature-icon" />
                 <h4>Stress Reduction</h4>
                 <p>Pre-event anxiety can impact performance. Our sports massage alleviates stress and boosts mental clarity for optimal performance.</p>
               </div>
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="200">
-                <div className="feature-icon">🏆</div>
+                <img src={sportsMassage3} alt="Performance Improvement" className="feature-icon" />
                 <h4>Performance Improvement</h4>
                 <p>By reducing lactic acid buildup and promoting circulation, sports massage enhances your athletic potential and power output.</p>
               </div>
-              <div className="feature-card" data-aos="zoom-in" data-aos-delay="300">
-                <div className="feature-icon">⚕️</div>
-                <h4>Injury Prevention</h4>
-                <p>Regular sports massage identifies problem areas before they become injuries, keeping you healthy and training consistently.</p>
-              </div>
-              <div className="feature-card" data-aos="zoom-in" data-aos-delay="400">
-                <div className="feature-icon">🔄</div>
-                <h4>Faster Recovery</h4>
-                <p>Accelerate muscle recovery and reduce soreness after intense training or competition with targeted sports massage therapy.</p>
-              </div>
-              <div className="feature-card" data-aos="zoom-in" data-aos-delay="500">
-                <div className="feature-icon">🎯</div>
-                <h4>Personalized Treatment</h4>
-                <p>Our therapists customize each session based on your sport, training goals, and specific problem areas.</p>
-              </div>
+
             </div>
           </div>
 
