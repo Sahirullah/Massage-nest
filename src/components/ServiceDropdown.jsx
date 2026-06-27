@@ -10,10 +10,10 @@ const ServiceDropdown = () => {
   const services = [
     { name: 'DEEP TISSUE MASSAGE IN DUBAI', link: '/deep-tissue-massage' },
     { name: 'MOBILE MASSAGE IN DUBAI', link: '/mobile-massage' },
-    { name: 'SPORTS MASSAGE IN DUBAI', link: '#' },
-    { name: 'COUPLES MASSAGE IN DUBAI', link: '#' },
-    { name: 'THAI MASSAGE IN DUBAI', link: '#' },
-    { name: 'MADEROTHERAPY MASSAGE IN DUBAI', link: '#' },
+    { name: 'SPORTS MASSAGE IN DUBAI', link: '/sports-massage' },
+    { name: 'COUPLES MASSAGE IN DUBAI', link: '/couples-massage' },
+    { name: 'THAI MASSAGE IN DUBAI', link: '/thai-massage' },
+    { name: 'MADEROTHERAPY MASSAGE IN DUBAI', link: '/maderotherapy-massage' },
     { name: 'RELAXATION MASSAGE IN DUBAI', link: '#' }
   ]
 

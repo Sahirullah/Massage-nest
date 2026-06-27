@@ -6,6 +6,10 @@ import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import DeepTissueMassage from './pages/DeepTissueMassage'
 import MobileMassage from './pages/MobileMassage'
+import SportsMassage from './pages/SportsMassage'
+import CouplesMassage from './pages/CouplesMassage'
+import ThaiMassage from './pages/ThaiMassage'
+import MaderotherapyMassage from './pages/MaderotherapyMassage'
 
 function AppRoutes() {
   return (
@@ -17,6 +21,10 @@ function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/deep-tissue-massage" element={<DeepTissueMassage />} />
       <Route path="/mobile-massage" element={<MobileMassage />} />
+      <Route path="/sports-massage" element={<SportsMassage />} />
+      <Route path="/couples-massage" element={<CouplesMassage />} />
+      <Route path="/thai-massage" element={<ThaiMassage />} />
+      <Route path="/maderotherapy-massage" element={<MaderotherapyMassage />} />
     </Routes>
   )
 }

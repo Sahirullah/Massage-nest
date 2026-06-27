@@ -1,4 +1,4 @@
-/* Mobile Massage Page Styles */
+/* Couples Massage Page Styles */
 
 /* Header */
 .header {
@@ -135,80 +135,10 @@
   font-family: Georgia, serif;
 }
 
-/* Intro Text */
-.intro-text {
-  text-align: center;
-  padding: 2rem 0 3rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.intro-text p {
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-/* Why Choose Section */
-.why-choose-section {
-  margin: 4rem 0;
-  text-align: center;
-}
-
-.section-subtitle {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.feature-card {
-  padding: 2rem 1.5rem;
-  text-align: center;
+/* Service Content */
+.service-content {
+  padding: 3rem 5%;
   background: white;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.feature-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.feature-card h4 {
-  font-size: 1rem;
-  color: #205B4F;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
-.feature-card p {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-.subsection-title {
-  font-size: 1.4rem;
-  color: #205B4F;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  font-family: Georgia, serif;
 }
 
 .service-container {
@@ -223,11 +153,21 @@
   padding: 2rem 0;
 }
 
-.intro-text {
-  font-size: 1.1rem;
-  color: #555;
+.intro-label {
+  font-size: 0.95rem;
+  color: #666;
   font-style: italic;
   margin-bottom: 1rem;
+  display: block;
+}
+
+.intro-section h2 {
+  font-size: 1.8rem;
+  color: #205B4F;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-family: Georgia, serif;
+  line-height: 1.3;
 }
 
 .intro-description {
@@ -244,23 +184,29 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.8rem;
 }
 
-.content-block.content-block-full {
-  grid-template-columns: 1fr 1fr;
+.content-block.center-text {
+  grid-template-columns: 1fr;
+  text-align: center;
 }
 
-.content-block.content-block-reverse {
-  grid-template-columns: 1fr 1fr;
+.content-block.center-text h2 {
+  font-size: 1.6rem;
+  color: #205B4F;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-family: Georgia, serif;
+  line-height: 1.3;
 }
 
-.content-block-reverse .content-text {
-  order: 2;
-}
-
-.content-block-reverse .content-image {
-  order: 1;
+.content-block.center-text p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 1rem;
 }
 
 .content-image {
@@ -268,10 +214,6 @@
   border-radius: 4px;
   width: 380px;
   margin: 0 auto;
-}
-
-.content-image.large-image {
-  width: 100%;
 }
 
 .content-image img {
@@ -283,15 +225,6 @@
 
 .content-text {
   padding: 1rem 0;
-}
-
-.company-label {
-  font-size: 0.7rem;
-  color: #d4af37;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .content-text h2 {
@@ -310,114 +243,48 @@
   margin-bottom: 0.6rem;
 }
 
-/* Why Choose Section */
-.why-choose-section {
-  text-align: center;
-  margin-bottom: 4rem;
-  padding: 3rem 0;
-}
-
-.why-choose-section h2 {
-  font-size: 2rem;
-  color: #205B4F;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  font-family: Georgia, serif;
-}
-
-.why-choose-subtitle {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 2.5rem;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.feature-card {
-  text-align: center;
-  padding: 1.5rem;
-}
-
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.feature-card h3 {
-  font-size: 1.1rem;
-  color: #205B4F;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
-.feature-card p {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-.benefits-list {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
-  text-align: left;
-}
-
-.benefits-list li {
-  font-size: 0.85rem;
-  color: #333;
-  margin-bottom: 0.4rem;
-  padding-left: 1.8rem;
-  position: relative;
-  line-height: 1.3;
-}
-
-.benefits-list li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #d4af37;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.service-btn {
-  display: inline-block;
-  background: #d4af37;
-  color: #205B4F;
-  padding: 0.8rem 1.8rem;
-  border-radius: 0;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  margin-top: 1rem;
-}
-
-.service-btn:hover {
-  background: #c99e2e;
-  transform: translateY(-2px);
-}
-
 /* CTA Section */
 .service-cta-section {
-  background: linear-gradient(135deg, #205B4F 0%, #2d7f74 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   color: white;
   padding: 4rem 5%;
   text-align: center;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 91, 79, 0.6);
+  z-index: 1;
 }
 
 .cta-content {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section-label-white {
+  font-size: 0.7rem;
+  color: #d4af37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .cta-content h2 {
@@ -425,6 +292,7 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   font-family: Georgia, serif;
+  line-height: 1.3;
 }
 
 .cta-content p {
@@ -436,11 +304,11 @@
 
 .cta-button {
   display: inline-block;
-  background: #d4af37;
+  background: white;
   color: #205B4F;
   border: none;
-  padding: 1rem 2.5rem;
-  font-size: 0.9rem;
+  padding: 0.8rem 2rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -451,7 +319,7 @@
 }
 
 .cta-button:hover {
-  background: #f0c857;
+  background: #f0f0f0;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -658,26 +526,8 @@
     margin-bottom: 2rem;
   }
 
-  .content-block-reverse .content-text {
-    order: unset;
-  }
-
-  .content-block-reverse .content-image {
-    order: unset;
-  }
-
   .content-text h2 {
     font-size: 1.4rem;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .benefits-list li {
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
   }
 
   .service-cta-section {
@@ -728,8 +578,12 @@
     padding: 1.5rem 2%;
   }
 
-  .intro-text {
-    font-size: 1rem;
+  .intro-label {
+    font-size: 0.9rem;
+  }
+
+  .intro-section h2 {
+    font-size: 1.4rem;
   }
 
   .intro-description {
@@ -745,29 +599,16 @@
     margin-bottom: 1rem;
   }
 
-  .company-label {
-    font-size: 0.65rem;
-  }
-
   .content-text p {
     font-size: 0.85rem;
   }
 
-  .why-choose-section h2 {
-    font-size: 1.4rem;
+  .content-block.center-text h2 {
+    font-size: 1.3rem;
   }
 
-  .feature-card h3 {
-    font-size: 1rem;
-  }
-
-  .feature-card p {
-    font-size: 0.8rem;
-  }
-
-  .benefits-list li {
-    font-size: 0.8rem;
-    margin-bottom: 0.6rem;
+  .content-block.center-text p {
+    font-size: 0.85rem;
   }
 
   .service-cta-section {
@@ -780,6 +621,10 @@
 
   .cta-content p {
     font-size: 0.85rem;
+  }
+
+  .section-label-white {
+    font-size: 0.65rem;
   }
 
   .footer-wrapper {
@@ -813,80 +658,5 @@
   .whatsapp-btn img {
     width: 45px;
     height: 45px;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .intro-text {
-    padding: 1.5rem 0 2rem;
-  }
-
-  .intro-text p {
-    font-size: 0.9rem;
-  }
-
-  .feature-card {
-    padding: 1.5rem;
-  }
-
-  .feature-icon {
-    font-size: 2.5rem;
-  }
-
-  .feature-card h4 {
-    font-size: 0.95rem;
-  }
-
-  .feature-card p {
-    font-size: 0.85rem;
-  }
-
-  .subsection-title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .feature-card {
-    padding: 1.2rem;
-  }
-
-  .feature-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .feature-card h4 {
-    font-size: 0.9rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .feature-card p {
-    font-size: 0.8rem;
-  }
-
-  .intro-text {
-    padding: 1rem 0 1.5rem;
-  }
-
-  .intro-text p {
-    font-size: 0.85rem;
   }
 }
