@@ -8,13 +8,13 @@ const ServiceDropdown = () => {
   const timeoutRef = useRef(null)
 
   const services = [
-    { name: 'DEEP TISSUE MASSAGE IN DUBAI', path: '/deep-tissue-massage' },
-    { name: 'MOBILE MASSAGE IN DUBAI', path: '#' },
-    { name: 'SPORTS MASSAGE IN DUBAI', path: '#' },
-    { name: 'COUPLES MASSAGE IN DUBAI', path: '#' },
-    { name: 'THAI MASSAGE IN DUBAI', path: '#' },
-    { name: 'MADEROTHERAPY MASSAGE IN DUBAI', path: '#' },
-    { name: 'RELAXATION MASSAGE IN DUBAI', path: '#' }
+    { name: 'DEEP TISSUE MASSAGE IN DUBAI', link: '/deep-tissue-massage' },
+    { name: 'MOBILE MASSAGE IN DUBAI', link: '/mobile-massage' },
+    { name: 'SPORTS MASSAGE IN DUBAI', link: '#' },
+    { name: 'COUPLES MASSAGE IN DUBAI', link: '#' },
+    { name: 'THAI MASSAGE IN DUBAI', link: '#' },
+    { name: 'MADEROTHERAPY MASSAGE IN DUBAI', link: '#' },
+    { name: 'RELAXATION MASSAGE IN DUBAI', link: '#' }
   ]
 
   const handleMouseEnter = () => {
@@ -52,16 +52,7 @@ const ServiceDropdown = () => {
       {isOpen && (
         <div className="dropdown-menu">
           {services.map((service, index) => (
-            service.path !== '#' ? (
-              <Link 
-                to={service.path}
-                key={index} 
-                className="dropdown-item" 
-                onClick={handleServiceClick}
-              >
-                {service.name}
-              </Link>
-            ) : (
+            service.link === '#' ? (
               <a 
                 href="#" 
                 key={index} 
@@ -73,6 +64,17 @@ const ServiceDropdown = () => {
               >
                 {service.name}
               </a>
+            ) : (
+              <Link 
+                to={service.link}
+                key={index} 
+                className="dropdown-item" 
+                onClick={() => {
+                  setIsOpen(false)
+                }}
+              >
+                {service.name}
+              </Link>
             )
           ))}
         </div>

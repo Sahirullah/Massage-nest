@@ -5,6 +5,7 @@ import Packages from './pages/Packages'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import DeepTissueMassage from './pages/DeepTissueMassage'
+import MobileMassage from './pages/MobileMassage'
 
 function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ function AppRoutes() {
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/deep-tissue-massage" element={<DeepTissueMassage />} />
+      <Route path="/mobile-massage" element={<MobileMassage />} />
     </Routes>
   )
 }
