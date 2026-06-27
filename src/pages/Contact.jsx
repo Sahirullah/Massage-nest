@@ -31,7 +31,7 @@ export default function Contact() {
 
         <div className="contact-hero-section">
           <div className="contact-hero-content">
-            <h1 className="contact-hero-title">Contact Us</h1>
+            <h1 className="contact-hero-title">Contact us</h1>
           </div>
         </div>
       </header>
@@ -40,70 +40,53 @@ export default function Contact() {
       <section className="contact-section">
         <div className="contact-container">
           <div className="contact-wrapper">
-            <div className="contact-info">
-              <h2>Get In Touch</h2>
-              <p>We'd love to hear from you. Whether you have a question about our services or want to book an appointment, feel free to reach out.</p>
+            {/* Left Side - Appointment Info */}
+            <div className="contact-left">
+              <div className="waiting-text">WHAT ARE YOU WAITING FOR...</div>
               
-              <div className="info-items">
-                <div className="info-item">
-                  <h4>📞 Phone</h4>
-                  <p><a href="tel:+971504480363">+971 50 448 0363</a></p>
-                </div>
-                
-                <div className="info-item">
-                  <h4>📧 Email</h4>
-                  <p><a href="mailto:shukrianhomespa@gmail.com">shukrianhomespa@gmail.com</a></p>
-                </div>
-                
-                <div className="info-item">
-                  <h4>📍 Address</h4>
-                  <p>Dubai, UAE</p>
-                </div>
-                
-                <div className="info-item">
-                  <h4>⏰ Hours</h4>
-                  <p>Monday - Sunday: 9:00 AM - 10:00 PM</p>
-                </div>
+              <h2 className="appointment-title">Make an appointment</h2>
+              
+              <div className="info-block">
+                <h4 className="info-label">📍 OUR LOCATION</h4>
+                <p className="info-value">Dubai</p>
               </div>
 
-              <div className="social-section">
-                <h4>Follow Us</h4>
-                <div className="social-icons">
-                  <a href="#facebook" className="social-icon">f</a>
-                  <a href="#instagram" className="social-icon">📷</a>
-                </div>
+              <div className="info-block">
+                <h4 className="info-label">⏰ OPENING HOURS</h4>
+                <p className="info-value">11am to 10pm</p>
+              </div>
+
+              <div className="info-block">
+                <h4 className="info-label">📞 CONTACT</h4>
+                <p className="contact-item">Phone: <a href="tel:+971504480363">+971504480363</a></p>
+                <p className="contact-item">Email: <a href="mailto:shukrianhomespa@gmail.com">shukrianhomespa@gmail.com</a></p>
               </div>
             </div>
 
-            <div className="contact-form-wrapper">
+            {/* Right Side - Contact Form */}
+            <div className="contact-right">
+              <h2 className="quote-title">Get a free quote</h2>
+              <div className="quote-divider"></div>
+              
               <form className="contact-form">
-                <h2>Send us a Message</h2>
-                
-                <div className="form-group">
-                  <input type="text" placeholder="Your Name" required />
+                <div className="form-row">
+                  <input type="text" placeholder="Your Name*" required />
+                  <input type="text" placeholder="Last name*" required />
                 </div>
                 
-                <div className="form-group">
-                  <input type="email" placeholder="Your Email" required />
-                </div>
+                <input type="tel" placeholder="Phone Number*" required />
+                <input type="email" placeholder="Email*" required />
+                <textarea placeholder="Message" rows="6"></textarea>
                 
-                <div className="form-group">
-                  <input type="tel" placeholder="Your Phone" required />
-                </div>
-                
-                <div className="form-group">
-                  <input type="text" placeholder="Service Interested In" />
-                </div>
-                
-                <div className="form-group">
-                  <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                
-                <button type="submit" className="submit-btn">SEND MESSAGE</button>
+                <button type="submit" className="submit-btn">Submit</button>
               </form>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Map/Image Section */}
+      <section className="map-section">
       </section>
 
       {/* Footer */}
@@ -153,8 +136,8 @@ export default function Contact() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
-          <p>Website Development By | Sahirullah</p>
+          <p>&copy;2024 Shukran Home Spa. All Rights Reserved.</p>
+          <p>Website Development By | Rankon Technologies</p>
         </div>
       </footer>
 

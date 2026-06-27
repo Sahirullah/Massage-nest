@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   padding: 0;
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -127,7 +127,7 @@
 }
 
 .contact-hero-title {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: white;
   margin-bottom: 0;
   font-weight: 400;
@@ -150,96 +150,95 @@
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
-.contact-info h2,
-.contact-form h2 {
-  font-size: 1.8rem;
-  color: #205B4F;
-  margin-bottom: 1rem;
-  font-weight: 600;
+.contact-left {
+  padding-right: 2rem;
 }
 
-.contact-info p {
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.info-items {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.info-item h4 {
-  font-size: 1rem;
-  color: #205B4F;
+.waiting-text {
+  font-size: 0.75rem;
+  color: #d4af37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.info-item p {
+.appointment-title {
+  font-size: 1.8rem;
+  color: #d4af37;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: Georgia, serif;
+}
+
+.info-block {
+  margin-bottom: 2rem;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  color: #205B4F;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.info-value {
   font-size: 0.95rem;
-  color: #666;
+  color: #333;
   margin: 0;
 }
 
-.info-item a {
+.contact-item {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.3rem 0;
+}
+
+.contact-item a {
   color: #205B4F;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
 }
 
-.info-item a:hover {
+.contact-item a:hover {
   color: #d4af37;
 }
 
-.social-section h4 {
-  font-size: 1rem;
-  color: #205B4F;
+/* Contact Form */
+.contact-right {
+  padding-left: 2rem;
+}
+
+.quote-title {
+  font-size: 1.2rem;
+  color: #333;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
-.social-icons {
-  display: flex;
+.quote-divider {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: grid;
   gap: 1rem;
 }
 
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: #205B4F;
-  color: white;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: all 0.3s;
-  font-size: 1rem;
-}
-
-.social-icon:hover {
-  background: #d4af37;
-  color: #205B4F;
-}
-
-/* Contact Form */
-.contact-form {
+.form-row {
   display: grid;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .contact-form input,
@@ -248,24 +247,28 @@
   border: 1px solid #ddd;
   border-radius: 0;
   font-family: inherit;
-  font-size: 0.95rem;
-  background: #f9f9f9;
+  font-size: 0.9rem;
+  background: white;
   transition: all 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  background: white;
   border-color: #d4af37;
-  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+  background: #fafafa;
 }
 
 .submit-btn {
   background: #d4af37;
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.9rem 2rem;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -273,11 +276,19 @@
   border-radius: 0;
   cursor: pointer;
   transition: all 0.3s;
+  margin-top: 1rem;
 }
 
 .submit-btn:hover {
   background: #c99e2e;
   transform: translateY(-2px);
+}
+
+/* Map Section */
+.map-section {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #e8ddd4 0%, #d4cfc4 100%);
 }
 
 /* Footer */
@@ -435,7 +446,6 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .contact-wrapper {
-    grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
@@ -446,7 +456,7 @@
   }
 
   .header {
-    min-height: 250px;
+    min-height: 200px;
   }
 
   .header-top {
@@ -468,14 +478,8 @@
     transform: translateY(-50%);
   }
 
-  .nav ul {
-    flex-direction: column;
-    gap: 0.8rem;
-    font-size: 0.7rem;
-  }
-
   .contact-hero-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .contact-section {
@@ -483,12 +487,24 @@
   }
 
   .contact-wrapper {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
-  .contact-info h2,
-  .contact-form h2 {
+  .contact-left {
+    padding-right: 0;
+  }
+
+  .contact-right {
+    padding-left: 0;
+  }
+
+  .appointment-title {
     font-size: 1.4rem;
+  }
+
+  .map-section {
+    height: 300px;
   }
 
   .footer-main {
@@ -500,20 +516,11 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
-  .footer-col h4 {
-    font-size: 0.9rem;
-  }
-
-  .footer-col a,
-  .footer-col p {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 480px) {
   .header {
-    min-height: 200px;
+    min-height: 150px;
   }
 
   .header-top {
@@ -529,31 +536,47 @@
   }
 
   .contact-hero-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .contact-section {
     padding: 1.5rem 2%;
   }
 
-  .contact-info h2,
-  .contact-form h2 {
-    font-size: 1.2rem;
+  .waiting-text {
+    font-size: 0.7rem;
   }
 
-  .contact-info p {
-    font-size: 0.85rem;
+  .appointment-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-label {
+    font-size: 0.7rem;
+  }
+
+  .quote-title {
+    font-size: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0.8rem;
   }
 
   .submit-btn {
     padding: 0.8rem 1.5rem;
     font-size: 0.75rem;
+  }
+
+  .map-section {
+    height: 250px;
   }
 
   .footer-wrapper {

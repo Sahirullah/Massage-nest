@@ -284,9 +284,9 @@ function App() {
                 <ul>
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/about">About Us</Link></li>
-                  <li><a href="#packages">Our Packages</a></li>
-                  <li><a href="#blog">Our Blogs</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
+                  <li><Link to="/packages">Our Packages</Link></li>
+                  <li><Link to="/blog">Our Blogs</Link></li>
+                  <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
               </div>
 

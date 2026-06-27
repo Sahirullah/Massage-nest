@@ -37,8 +37,8 @@ export default function Packages() {
               <li><ServiceDropdown /></li>
               <li><Link to="/packages">OUR PACKAGES</Link></li>
               <li><Link to="/blog">OUR BLOG</Link></li>
-              <li><a href="#contact">CONTACT US</a></li>
-              <li><a href="#book" className="book-btn">BOOK NOW</a></li>
+              <li><Link to="/contact">CONTACT US</Link></li>
+              <li><a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
           <MobileMenu />
@@ -83,11 +83,11 @@ export default function Packages() {
               <div className="footer-col">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><a href="/">Home</a></li>
+                  <li><Link to="/">Home</Link></li>
                   <li><Link to="/about">About Us</Link></li>
                   <li><Link to="/packages">Our Packages</Link></li>
-                  <li><a href="#blog">Our Blogs</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
+                  <li><Link to="/blog">Our Blogs</Link></li>
+                  <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
               </div>
 
