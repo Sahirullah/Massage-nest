@@ -3,6 +3,10 @@ import logo from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_file
 import heroSec from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png'
 import imgExperience from '../assets/Experience the Transformation.jpg'
 import whatsappBtn from '../assets/Whatsapp-btn.avif'
+import maderotherapy1 from '../assets/Maderotherapy/1.png'
+import maderotherapy2 from '../assets/Maderotherapy/2.png'
+import maderotherapy3 from '../assets/Maderotherapy/3.png'
+import maderotherapy4 from '../assets/Maderotherapy/4.png'
 import ServiceDropdown from '../components/ServiceDropdown'
 import MobileMenu from '../components/MobileMenu'
 import './MaderotherapyMassage.css'
@@ -71,25 +75,25 @@ export default function MaderotherapyMassage() {
             
             <div className="features-grid">
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="0">
-                <div className="feature-icon">🏆</div>
+                <img src={maderotherapy1} alt="Skilled and Experienced Therapists" className="feature-icon" />
                 <h3>Skilled and Experienced Therapists</h3>
                 <p>Our team comprises highly trained massage therapists with the expertise to deliver massage results through proven techniques.</p>
               </div>
 
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="100">
-                <div className="feature-icon">✨</div>
+                <img src={maderotherapy2} alt="Precision Techniques" className="feature-icon" />
                 <h3>Precision Techniques</h3>
                 <p>We employ the most effective techniques to maximize the benefits of Maderotherapy, ensuring optimal results for your body.</p>
               </div>
 
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="200">
-                <div className="feature-icon">🏥</div>
+                <img src={maderotherapy3} alt="Hygienic Standards" className="feature-icon" />
                 <h3>Hygienic Standards</h3>
                 <p>Your well-being is our top priority as we maintain strict cleanliness and sanitization protocols to ensure your safety.</p>
               </div>
 
               <div className="feature-card" data-aos="zoom-in" data-aos-delay="300">
-                <div className="feature-icon">⏰</div>
+                <img src={maderotherapy4} alt="Punctuality and Professionalism" className="feature-icon" />
                 <h3>Punctuality and Professionalism</h3>
                 <p>At Click4Massage, we value your time and strive to provide the highest level of service, punctuality and professionalism every session.</p>
               </div>
