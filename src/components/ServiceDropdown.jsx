@@ -14,7 +14,7 @@ const ServiceDropdown = () => {
     { name: 'COUPLES MASSAGE IN DUBAI', link: '/couples-massage' },
     { name: 'THAI MASSAGE IN DUBAI', link: '/thai-massage' },
     { name: 'MADEROTHERAPY MASSAGE IN DUBAI', link: '/maderotherapy-massage' },
-    { name: 'RELAXATION MASSAGE IN DUBAI', link: '#' }
+    { name: 'RELAXATION MASSAGE IN DUBAI', link: '/relaxation-massage' }
   ]
 
   const handleMouseEnter = () => {

@@ -10,6 +10,7 @@ import SportsMassage from './pages/SportsMassage'
 import CouplesMassage from './pages/CouplesMassage'
 import ThaiMassage from './pages/ThaiMassage'
 import MaderotherapyMassage from './pages/MaderotherapyMassage'
+import RelaxationMassage from './pages/RelaxationMassage'
 
 function AppRoutes() {
   return (
@@ -25,6 +26,7 @@ function AppRoutes() {
       <Route path="/couples-massage" element={<CouplesMassage />} />
       <Route path="/thai-massage" element={<ThaiMassage />} />
       <Route path="/maderotherapy-massage" element={<MaderotherapyMassage />} />
+      <Route path="/relaxation-massage" element={<RelaxationMassage />} />
     </Routes>
   )
 }
