@@ -85,8 +85,18 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map/Image Section */}
+      {/* Map Section */}
       <section className="map-section">
+        <iframe
+          title="Shukran Home Spa Location - Islamabad"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.3245652234974!2d74.35873587346153!3d33.72345467346153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07e6d65d5%3A0x6b0e0d0e0d0e0d0e!2sIslamabad!5e0!3m2!1sen!2s!4v1234567890"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
 
       {/* Footer */}
