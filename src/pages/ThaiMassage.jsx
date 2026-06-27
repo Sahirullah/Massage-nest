@@ -15,8 +15,8 @@ export default function ThaiMassage() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -47,7 +47,7 @@ export default function ThaiMassage() {
           <div className="content-block">
             <div className="content-text">
               <h2>Get Professional Thai Massage at Home in Dubai</h2>
-              <p>Thai massage is an ancient healing practice that combines acupressure, yoga-like stretching, and meditation. At Shukran Home Spa, our experienced Thai massage therapists bring this traditional art form right to your home in Dubai.</p>
+              <p>Thai massage is an ancient healing practice that combines acupressure, yoga-like stretching, and meditation. At Click4Massage, our experienced Thai massage therapists bring this traditional art form right to your home in Dubai.</p>
               <p>Our therapists are trained in authentic Thai massage techniques that focus on energy lines and pressure points throughout your body. Each session is customized to your specific needs, whether you're looking to relieve tension, improve flexibility, or simply relax.</p>
             </div>
             <div className="content-image">
@@ -78,7 +78,7 @@ export default function ThaiMassage() {
           <div className="content-block">
             <div className="content-text">
               <h2>Traditional Thai Massage: Delivered at Home</h2>
-              <p>At Shukran Home Spa, we honor the traditional methods of Thai massage while adapting them to your home environment. Our therapists use their hands, feet, knees, and elbows to apply pressure and create therapeutic stretches.</p>
+              <p>At Click4Massage, we honor the traditional methods of Thai massage while adapting them to your home environment. Our therapists use their hands, feet, knees, and elbows to apply pressure and create therapeutic stretches.</p>
               <p>The result is a deeply relaxing yet invigorating experience that leaves you feeling balanced, flexible, and refreshed. Your session will be conducted in a calm, peaceful setting within your own home.</p>
             </div>
             <div className="content-image">
@@ -90,7 +90,7 @@ export default function ThaiMassage() {
           <div className="content-block center-text">
             <h2>Enhanced Health and Vitality</h2>
             <p>Regular Thai massage sessions can contribute to improved health and vitality. Many clients experience better sleep, increased energy levels, reduced stress, and enhanced overall well-being.</p>
-            <p>By investing in regular Thai massage therapy, you're investing in your long-term health and happiness. Let Shukran Home Spa help you discover the transformative benefits of authentic Thai massage.</p>
+            <p>By investing in regular Thai massage therapy, you're investing in your long-term health and happiness. Let Click4Massage help you discover the transformative benefits of authentic Thai massage.</p>
           </div>
 
         </div>
@@ -100,9 +100,9 @@ export default function ThaiMassage() {
       <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="cta-overlay"></div>
         <div className="cta-content">
-          <h3 className="section-label-white">SHUKRAN HOME SPA</h3>
+          <h3 className="section-label-white">CLICK4MASSAGE</h3>
           <h2>Energize Your Body and Mind with Holistic Thai Massage</h2>
-          <p>Experience the ancient healing power of Thai massage in the comfort of your own home. Our skilled therapists are ready to help you achieve balance, flexibility, and vitality. Book your Thai massage session with Shukran Home Spa today and discover why clients throughout Dubai trust us for their wellness needs. Don't wait—call us now to schedule your appointment.</p>
+          <p>Experience the ancient healing power of Thai massage in the comfort of your own home. Our skilled therapists are ready to help you achieve balance, flexibility, and vitality. Book your Thai massage session with Click4Massage today and discover why clients throughout Dubai trust us for their wellness needs. Don't wait—call us now to schedule your appointment.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
         </div>
       </section>
@@ -112,9 +112,9 @@ export default function ThaiMassage() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -143,7 +143,7 @@ export default function ThaiMassage() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -155,7 +155,7 @@ export default function ThaiMassage() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

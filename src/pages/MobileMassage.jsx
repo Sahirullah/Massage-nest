@@ -15,8 +15,8 @@ export default function MobileMassage() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -52,7 +52,7 @@ export default function MobileMassage() {
           {/* Section 1: Ease Daily Stress */}
           <div className="content-block">
             <div className="content-text">
-              <h3 className="section-label">SHUKRAN HOME SPA</h3>
+              <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Ease Daily Stress With Mobile Massages</h2>
               <p>Our mobile massage in Dubai brings all the benefits of a spa directly into your living room.</p>
               <p>No rushing to appointments across town or uncomfortable clinic settings. Just tranquil, therapeutic massages from the best comfort – your home!</p>
@@ -65,7 +65,7 @@ export default function MobileMassage() {
 
           {/* Why Choose Section with Feature Cards */}
           <div className="why-choose-section">
-            <h3 className="section-label">SHUKRAN HOME SPA</h3>
+            <h3 className="section-label">CLICK4MASSAGE</h3>
             <h2>Why Choose Our Home Massage Service?</h2>
             <p className="section-subtitle">Indulge in an oasis of calm with our mobile massages designed around you.</p>
             
@@ -109,7 +109,7 @@ export default function MobileMassage() {
               <img src={img22} alt="Total Relaxation" />
             </div>
             <div className="content-text">
-              <h3 className="section-label">SHUKRAN HOME SPA</h3>
+              <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Our Deep Tissue Techniques Release Chronic Tension</h2>
               <p>We use advanced massage techniques like trigger point therapy, myofascial stretching, and cross-fiber friction to target those inner muscle layers that just won't relax.</p>
               <p>Regardless of whether you have an old injury, repetitive strain or just hold too much tension in your back and shoulders, our precision massage treatment can help!</p>
@@ -122,7 +122,7 @@ export default function MobileMassage() {
           {/* Section 3: Pamper Yourself */}
           <div className="content-block">
             <div className="content-text">
-              <h3 className="section-label">SHUKRAN HOME SPA</h3>
+              <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Pamper Yourself With Luxury Mobile Massages</h2>
               <p>Our luxury mobile massage sessions start with a consultation to tailor the treatments to your needs. Your assigned massage pro will craft each phase of your session around your responses. We transform whatever room you desire into a blissful spa sanctuary.</p>
               
@@ -160,9 +160,9 @@ export default function MobileMassage() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -190,7 +190,7 @@ export default function MobileMassage() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -202,7 +202,7 @@ export default function MobileMassage() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

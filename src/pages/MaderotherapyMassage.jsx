@@ -13,8 +13,8 @@ export default function MaderotherapyMassage() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -44,9 +44,9 @@ export default function MaderotherapyMassage() {
           {/* Section 1: Experience the Transformation */}
           <div className="content-block">
             <div className="content-text">
-              <p className="section-label">SHUKRAN HOME SPA</p>
+              <p className="section-label">CLICK4MASSAGE</p>
               <h2>Experience the Transformation with Maderotherapy Massage at Home in Dubai</h2>
-              <p>Are you seeking to shed excess fat and achieve a more toned physique? Look no further than Shukran at Home Spa for Maderotherapy massage in Dubai. A revolutionary treatment that redefines your body contours and transforms your appearance.</p>
+              <p>Are you seeking to shed excess fat and achieve a more toned physique? Look no further than Click4Massage at Home Spa for Maderotherapy massage in Dubai. A revolutionary treatment that redefines your body contours and transforms your appearance.</p>
               <p>Maderotherapy is a non-invasive, wood-based massage technique that combines the therapeutic benefits of massage with the sculpting power of specially crafted wooden instruments to safely target problem areas while the skin care treatments.</p>
               <p>Experience the dramatic results of Maderotherapy as it effectively reduces fat deposits, improves circulation and tightens, utilizing specially crafted wooden instruments to easily target problem areas while the skin care treatments.</p>
               <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="service-btn">BOOK NOW</a>
@@ -63,11 +63,11 @@ export default function MaderotherapyMassage() {
             <p>Fat tissue begins to recede, excess fluid flushes out, Stubborn tissue taps reduces the appearance of at home Maderotherapy massage in Dubai. Contact us today to schedule an appointment with our experienced massage therapists and embark on your journey to a transformed physique.</p>
           </div>
 
-          {/* Section 3: Why Choose Shukran Home Spa */}
+          {/* Section 3: Why Choose Click4Massage */}
           <div className="why-choose-section">
-            <p className="section-label">SHUKRAN HOME SPA</p>
-            <h2>Why Choose Shukran Home Spa for Maderotherapy in Dubai?</h2>
-            <p className="why-choose-subtitle">When it comes to Maderotherapy, Shukran Home Spa stands out for several reasons.</p>
+            <p className="section-label">CLICK4MASSAGE</p>
+            <h2>Why Choose Click4Massage for Maderotherapy in Dubai?</h2>
+            <p className="why-choose-subtitle">When it comes to Maderotherapy, Click4Massage stands out for several reasons.</p>
             
             <div className="features-grid">
               <div className="feature-card">
@@ -91,7 +91,7 @@ export default function MaderotherapyMassage() {
               <div className="feature-card">
                 <div className="feature-icon">⏰</div>
                 <h3>Punctuality and Professionalism</h3>
-                <p>At Shukran Home Spa, we value your time and strive to provide the highest level of service, punctuality and professionalism every session.</p>
+                <p>At Click4Massage, we value your time and strive to provide the highest level of service, punctuality and professionalism every session.</p>
               </div>
             </div>
           </div>
@@ -103,9 +103,9 @@ export default function MaderotherapyMassage() {
       <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="cta-overlay"></div>
         <div className="cta-content">
-          <p className="section-label-white">SHUKRAN HOME SPA</p>
-          <h2>Schedule Your Maderotherapy Massage with Shukran Home Spa Today</h2>
-          <p>If you're seeking Maderotherapy massage from industry-leading therapists, then no further than Shukran Home Spa. Don't settle for anything less than the best when it comes to sculpting that transformation benefits of Maderotherapy. Book your appointment with us today and experience that only Shukran Home Spa can deliver.</p>
+          <p className="section-label-white">CLICK4MASSAGE</p>
+          <h2>Schedule Your Maderotherapy Massage with Click4Massage Today</h2>
+          <p>If you're seeking Maderotherapy massage from industry-leading therapists, then no further than Click4Massage. Don't settle for anything less than the best when it comes to sculpting that transformation benefits of Maderotherapy. Book your appointment with us today and experience that only Click4Massage can deliver.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
         </div>
       </section>
@@ -115,9 +115,9 @@ export default function MaderotherapyMassage() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -147,7 +147,7 @@ export default function MaderotherapyMassage() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -159,7 +159,7 @@ export default function MaderotherapyMassage() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

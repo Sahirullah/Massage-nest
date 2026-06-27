@@ -29,7 +29,7 @@ export default function MobileMenu() {
         <button className="close-btn" onClick={closeMenu}>✕</button>
         
         <div className="menu-header">
-          <img src={logo} alt="Shukran Home Spa" className="menu-logo" />
+          <img src={logo} alt="Click4Massage" className="menu-logo" />
         </div>
 
         <ul>

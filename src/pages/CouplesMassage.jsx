@@ -13,8 +13,8 @@ export default function CouplesMassage() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -44,8 +44,8 @@ export default function CouplesMassage() {
           {/* Section 1: Deepen Your Bond */}
           <div className="intro-section">
             <p className="intro-label">Deepen Your Bond with a Relaxing Couple Massage at Home in Dubai</p>
-            <h2>Enhance the Connection with Your Partner through Shukran Home Spa's Couples Massage</h2>
-            <p className="intro-description">Looking for some quality time alone with your significant other? Look no further than Shukran Home Spa for the ultimate couple's massage experience. Our couples' massage is expertly crafted to help partners relax and rejuvenate together, fostering a deeper connection and addressing any tensions that may arise.</p>
+            <h2>Enhance the Connection with Your Partner through Click4Massage's Couples Massage</h2>
+            <p className="intro-description">Looking for some quality time alone with your significant other? Look no further than Click4Massage for the ultimate couple's massage experience. Our couples' massage is expertly crafted to help partners relax and rejuvenate together, fostering a deeper connection and addressing any tensions that may arise.</p>
             <p className="intro-description">This luxurious experience, akin to those offered by premier couple spas in Dubai, provides the perfect opportunity to bond while indulging in a well-deserved treat. Many couples find the massage to be a sensual experience, paving the way for intimate moments later on.</p>
           </div>
 
@@ -53,7 +53,7 @@ export default function CouplesMassage() {
           <div className="content-block center-text">
             <h2>How Our Dubai Couples Massage Can Revitalize Your Relationship?</h2>
             <p>A disagreement with your partner can cast a shadow over your entire weekend, leaving you feeling disconnected and distressed. That's where our couple's massage in Dubai works its magic.</p>
-            <p>Whether you're struggling to find time together, dealing with personal issues, or simply craving intimacy, our couple's massage at Shukran Home Spa can make a world of difference. With side-by-side massage tables, you and your partner can immerse yourselves in a stress-relieving, muscle-soothing experience that strengthens your bond.</p>
+            <p>Whether you're struggling to find time together, dealing with personal issues, or simply craving intimacy, our couple's massage at Click4Massage can make a world of difference. With side-by-side massage tables, you and your partner can immerse yourselves in a stress-relieving, muscle-soothing experience that strengthens your bond.</p>
           </div>
 
           {/* Section 3: Tailored Experience with Image */}
@@ -63,7 +63,7 @@ export default function CouplesMassage() {
             </div>
             <div className="content-text">
               <h2>Tailored Couple's Massage Experience in Dubai</h2>
-              <p>At Shukran Home Spa, we believe in personalized pampering. Choose from our range of massages, whether you're in need of relaxation, deep tissue work, or the comforting warmth of hot stones.</p>
+              <p>At Click4Massage, we believe in personalized pampering. Choose from our range of massages, whether you're in need of relaxation, deep tissue work, or the comforting warmth of hot stones.</p>
               <p>You and your partner can customize this experience further by adjusting the pressure, targeting specific areas, and communicating any health concerns to our skilled therapists.</p>
             </div>
           </div>
@@ -75,9 +75,9 @@ export default function CouplesMassage() {
       <section className="service-cta-section" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="cta-overlay"></div>
         <div className="cta-content">
-          <h3 className="section-label-white">SHUKRAN HOME SPA</h3>
+          <h3 className="section-label-white">CLICK4MASSAGE</h3>
           <h2>Book Your Ultimate Couple's Massage At Home In Dubai Today</h2>
-          <p>A massage isn't just a treatment—it's an experience that floods your body with happiness-inducing chemicals like oxytocin, serotonin, and dopamine, leaving you feeling blissfully relaxed. Our couple's massage in Dubai goes beyond mere relaxation, offering unparalleled pain relief and emotional rejuvenation for couples. If you're looking to strengthen your bond while reaping the myriad benefits of massage, don't hesitate to book a couple's massage with Shukran Home Spa today. Our expert therapists will cater to your every need and desire, ensuring a truly satisfying experience. Don't delay—call us now to schedule your appointment.</p>
+          <p>A massage isn't just a treatment—it's an experience that floods your body with happiness-inducing chemicals like oxytocin, serotonin, and dopamine, leaving you feeling blissfully relaxed. Our couple's massage in Dubai goes beyond mere relaxation, offering unparalleled pain relief and emotional rejuvenation for couples. If you're looking to strengthen your bond while reaping the myriad benefits of massage, don't hesitate to book a couple's massage with Click4Massage today. Our expert therapists will cater to your every need and desire, ensuring a truly satisfying experience. Don't delay—call us now to schedule your appointment.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
         </div>
       </section>
@@ -87,9 +87,9 @@ export default function CouplesMassage() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -117,7 +117,7 @@ export default function CouplesMassage() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -129,7 +129,7 @@ export default function CouplesMassage() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

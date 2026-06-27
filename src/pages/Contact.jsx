@@ -12,8 +12,8 @@ export default function Contact() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -59,7 +59,7 @@ export default function Contact() {
               <div className="info-block">
                 <h4 className="info-label">📞 CONTACT</h4>
                 <p className="contact-item">Phone: <a href="tel:+971504480363">+971504480363</a></p>
-                <p className="contact-item">Email: <a href="mailto:shukrianhomespa@gmail.com">shukrianhomespa@gmail.com</a></p>
+                <p className="contact-item">Email: <a href="mailto:info.click4massage@gmail.com">info.click4massage@gmail.com</a></p>
               </div>
             </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
       {/* Map Section */}
       <section className="map-section">
         <iframe
-          title="Shukran Home Spa Location - Islamabad"
+          title="Click4Massage Location - Islamabad"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.3245652234974!2d74.35873587346153!3d33.72345467346153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07e6d65d5%3A0x6b0e0d0e0d0e0d0e!2sIslamabad!5e0!3m2!1sen!2s!4v1234567890"
           width="100%"
           height="100%"
@@ -104,9 +104,9 @@ export default function Contact() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -134,7 +134,7 @@ export default function Contact() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -146,7 +146,7 @@ export default function Contact() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2024 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2024 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Rankon Technologies</p>
         </div>
       </footer>

@@ -24,7 +24,7 @@ function App() {
       <header className="header" style={{backgroundImage: `url(${heroSec})`}}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
             <span className="logo-text"></span>
           </div>
           <nav className="nav desktop-nav">
@@ -45,7 +45,7 @@ function App() {
           <div className="hero-content">
             <div className="hero-text">
               <h1>Relax with Our Premium Massage Home Service in Dubai</h1>
-              <p>Shukran Home Spa is your oasis of calm in the bustling city of Dubai. Escape the daily chaos and immerse yourself in moments of pure relaxation with our top-notch massage services.</p>
+              <p>Click4Massage is your oasis of calm in the bustling city of Dubai. Escape the daily chaos and immerse yourself in moments of pure relaxation with our top-notch massage services.</p>
               <button className="appointment-btn">BOOK AN APPOINTMENT →</button>
             </div>
           </div>
@@ -119,9 +119,9 @@ function App() {
         <div className="why-choose-wrapper">
           <div className="why-choose-container">
             <div className="why-choose-content">
-              <h2>Why Choose Shukran Home Spa for Your Wellness Needs?</h2>
+              <h2>Why Choose Click4Massage for Your Wellness Needs?</h2>
               <h2 style={{fontSize: '2rem', color: '#1a1a1a', marginTop: '0', marginBottom: '1rem', fontWeight: 600, lineHeight: 1.2}}>Give yourself the well-deserved treatment</h2>
-              <p>Experience the expertise of our professional therapists who specialize in delivering unique spa experiences tailored to your needs. Let our skilled hands melt away the stresses of your day, leaving you feeling refreshed, rejuvenated, and renewed.</p>
+            <p>Experience the expertise of our professional therapists who specialize in delivering unique spa experiences tailored to your needs. Let our skilled hands melt away the stresses of your day, leaving you feeling refreshed, rejuvenated, and renewed.</p>
               <p>Indulge in a variety of massage options designed to address every ache, pain, and tension. From Thai Massage to Deep Tissue Massage, our range of services caters to all your relaxation needs.</p>
               <button className="book-btn">BOOK NOW</button>
             </div>
@@ -150,14 +150,14 @@ function App() {
 
       <section className="contact-cta">
         <div className="contact-cta-container">
-          <h2>Contact us Shukran Home Spa for the Best Massage At your Home</h2>
+          <h2>Contact us Click4Massage for the Best Massage At your Home</h2>
           <button className="cta-button-secondary">BOOK NOW</button>
         </div>
       </section>
 
       <section className="pricing">
         <div className="pricing-container">
-          <h4>SHUKRAN HOME SPA</h4>
+          <h4>CLICK4MASSAGE</h4>
           <h2>Our Home Massage Service Packages Plans</h2>
           <div className="pricing-grid">
             <div className="pricing-card">
@@ -241,7 +241,7 @@ function App() {
                   <div>
                     <h4>CONTACT</h4>
                     <p><a href="tel:+971504480363">+971504480363</a></p>
-                    <p><a href="mailto:shukrianhomespa@gmail.com">shukrianhomespa@gmail.com</a></p>
+                    <p><a href="mailto:info.click4massage@gmail.com">info.click4massage@gmail.com</a></p>
                   </div>
                 </div>
               </div>
@@ -273,9 +273,9 @@ function App() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -303,7 +303,7 @@ function App() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -315,7 +315,7 @@ function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

@@ -16,8 +16,8 @@ export default function DeepTissueMassage() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -52,7 +52,7 @@ export default function DeepTissueMassage() {
             <div className="content-text">
               <h3 className="section-label">GET ULTIMATE RELAXATION</h3>
               <h2>Get Ultimate Relaxation with Deep Tissue Massage at Home in Dubai</h2>
-              <p>Discover the perfect blend of comfort and therapy. Our deep tissue massage experts use advanced techniques to release tension and stress. At Shukran Home Spa, we bring the spa to you, ensuring maximum comfort in your own home.</p>
+              <p>Discover the perfect blend of comfort and therapy. Our deep tissue massage experts use advanced techniques to release tension and stress. At Click4Massage, we bring the spa to you, ensuring maximum comfort in your own home.</p>
               <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="service-btn">BOOK NOW</a>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function DeepTissueMassage() {
       <section className="service-cta-section">
         <div className="cta-content">
           <h2>Book Your Deep Tissue Massage Today</h2>
-          <p>Experience the therapeutic benefits of professional deep tissue massage in the comfort of your own home. Contact Shukran Home Spa to schedule your appointment.</p>
+          <p>Experience the therapeutic benefits of professional deep tissue massage in the comfort of your own home. Contact Click4Massage to schedule your appointment.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT</a>
         </div>
       </section>
@@ -128,9 +128,9 @@ export default function DeepTissueMassage() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -158,7 +158,7 @@ export default function DeepTissueMassage() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -170,7 +170,7 @@ export default function DeepTissueMassage() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

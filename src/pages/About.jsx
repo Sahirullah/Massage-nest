@@ -26,8 +26,8 @@ export default function About() {
       <header className="header desktop-header" style={{backgroundImage: `url(${heroSec})`}}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -55,9 +55,9 @@ export default function About() {
       <section className="about-intro-section">
         <div className="about-intro-container">
           <div className="about-intro-text">
-            <h2>SHUKRAN HOME SPA</h2>
+            <h2>CLICK4MASSAGE</h2>
             <p>
-              Shukran Home Spa is a trusted home massage service in Dubai, offering professional spa and wellness treatments in the comfort of your home. Our experienced therapists provide personalized massage therapies designed to relieve stress, reduce muscle tension, improve circulation, and promote overall well-being. We create a relaxing spa experience using professional techniques tailored to your needs. Whether you're looking for relaxation, pain relief, or a rejuvenating wellness session, Shukran Home Spa is committed to delivering exceptional home spa services across Dubai.
+              Click4Massage is a trusted home massage service in Dubai, offering professional spa and wellness treatments in the comfort of your home. Our experienced therapists provide personalized massage therapies designed to relieve stress, reduce muscle tension, improve circulation, and promote overall well-being. We create a relaxing spa experience using professional techniques tailored to your needs. Whether you're looking for relaxation, pain relief, or a rejuvenating wellness session, Click4Massage is committed to delivering exceptional home spa services across Dubai.
             </p>
             <button className="contact-us-btn">CONTACT US</button>
           </div>
@@ -91,7 +91,7 @@ export default function About() {
       <section className="expertise-section">
         <div className="expertise-container">
           <h2>Our Expertise</h2>
-          <p className="expertise-subtitle">Shukran Home Spa stands out in Dubai for its distinctive offerings, backed by:</p>
+          <p className="expertise-subtitle">Click4Massage stands out in Dubai for its distinctive offerings, backed by:</p>
           <div className="expertise-grid">
             <div className="expertise-card">
               <h4>Extensive expertise in our niche</h4>
@@ -112,8 +112,8 @@ export default function About() {
       {/* CTA Section */}
       <section className="about-cta-section">
         <div className="cta-content">
-          <p className="cta-label">SHUKRAN HOME SPA</p>
-          <h2>Count on Shukran Home Spa for the Best Spa Experience</h2>
+          <p className="cta-label">CLICK4MASSAGE</p>
+          <h2>Count on Click4Massage for the Best Spa Experience</h2>
           <p>Contact us now to book your at-home massage service and embark on a journey to inner peace and tranquility.</p>
           <button className="cta-button">BOOK AN APPOINTMENT →</button>
         </div>
@@ -124,9 +124,9 @@ export default function About() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -154,7 +154,7 @@ export default function About() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -166,7 +166,7 @@ export default function About() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>

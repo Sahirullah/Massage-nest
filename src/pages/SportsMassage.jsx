@@ -14,8 +14,8 @@ export default function SportsMassage() {
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
         <div className="header-top">
           <div className="logo-section">
-            <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <img src={logo} alt="Click4Massage Logo" className="logo" />
+            <span className="logo-text">Click4Massage</span>
           </div>
           <nav className="nav desktop-nav">
             <ul>
@@ -51,8 +51,8 @@ export default function SportsMassage() {
           {/* Section 1: Sports Massage Benefits */}
           <div className="content-block">
             <div className="content-text">
-              <h3 className="section-label">SHUKRAN HOME SPA</h3>
-              <h2>Sports Massage at Shukran Home Spa</h2>
+              <h3 className="section-label">CLICK4MASSAGE</h3>
+              <h2>Sports Massage at Click4Massage</h2>
               <p>Our sports massage therapy is designed specifically for athletes and active individuals seeking to enhance performance while minimizing injury.</p>
               <p>From pre-event preparation to post-workout recovery, our certified sports massage therapists employ advanced techniques to optimize your body's potential and expedite recovery.</p>
               <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="service-btn">CONTACT US</a>
@@ -64,8 +64,8 @@ export default function SportsMassage() {
 
           {/* Why Choose Section with Feature Cards */}
           <div className="why-choose-section">
-            <h3 className="section-label">SHUKRAN HOME SPA</h3>
-            <h2>Experience the Benefits of Sports Massage at Shukran Home Spa</h2>
+            <h3 className="section-label">CLICK4MASSAGE</h3>
+            <h2>Experience the Benefits of Sports Massage at Click4Massage</h2>
             <p className="section-subtitle">Enhance your athletic performance with our specialized sports massage services.</p>
             
             <div className="features-grid">
@@ -108,9 +108,9 @@ export default function SportsMassage() {
               <img src={img2} alt="Customized Sports Massage" />
             </div>
             <div className="content-text">
-              <h3 className="section-label">SHUKRAN HOME SPA</h3>
+              <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Customized Sports Massage In Dubai To Address Your Unique Needs</h2>
-              <p>At Shukran Home Spa, we understand that every athlete is different. Our therapists conduct a thorough assessment to identify the specific muscle groups and problem areas relevant to your sport and training regimen.</p>
+              <p>At Click4Massage, we understand that every athlete is different. Our therapists conduct a thorough assessment to identify the specific muscle groups and problem areas relevant to your sport and training regimen.</p>
               <p>Whether you're dealing with tight hamstrings, shoulder tension, lower back strain, or any other sports-related concern, we tailor our approach to address your individual needs.</p>
               
               <h3 className="subsection-title">Expert Sports Massage Techniques</h3>
@@ -135,9 +135,9 @@ export default function SportsMassage() {
         <div className="footer-wrapper">
           <div className="footer-main">
             <div className="footer-logo-section">
-              <img src={logo} alt="Shukran Home Spa" className="footer-logo-img" />
-              <h3>Shukran Home Spa</h3>
-              <p>Introducing Shukran Home Spa, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
+              <img src={logo} alt="Click4Massage" className="footer-logo-img" />
+              <h3>Click4Massage</h3>
+              <p>Introducing Click4Massage, your premier destination for achieving your wellness goals right in the comfort of your own home.</p>
             </div>
 
             <div className="footer-links-section">
@@ -165,7 +165,7 @@ export default function SportsMassage() {
               <div className="footer-col">
                 <h4>Get In Touch</h4>
                 <p><a href="tel:+971504480363">📞 +971504480363</a></p>
-                <p><a href="mailto:shukrianhomespa@gmail.com">📧 shukrianhomespa@gmail.com</a></p>
+                <p><a href="mailto:info.click4massage@gmail.com">📧 info.click4massage@gmail.com</a></p>
                 <p>📍 Address: Dubai</p>
                 <div className="social-links">
                   <a href="#facebook">f</a>
@@ -177,7 +177,7 @@ export default function SportsMassage() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy;2026 Shukran Home Spa. All Rights Reserved.</p>
+          <p>&copy;2026 Click4Massage. All Rights Reserved.</p>
           <p>Website Development By | Sahirullah</p>
         </div>
       </footer>
