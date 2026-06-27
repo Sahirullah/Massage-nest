@@ -20,7 +20,7 @@ export default function About() {
     }, 4000)
     return () => clearInterval(timer)
   }, [])
-
+  
   return (
     <>
       <header className="header desktop-header" style={{backgroundImage: `url(${heroSec})`}}>

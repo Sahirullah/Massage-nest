@@ -38,7 +38,7 @@ export default function MobileMenu() {
           <li className="mobile-dropdown-item">
             <ServiceDropdown />
           </li>
-          <li><a href="#packages" onClick={closeMenu}>Our Packages</a></li>
+          <li><Link to="/packages" onClick={closeMenu}>Our Packages</Link></li>
           <li><a href="#blog" onClick={closeMenu}>Our Blog</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contact Us</a></li>
         </ul>

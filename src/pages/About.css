@@ -171,14 +171,13 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  align-items: center;
-  min-height: 500px;
+  gap: 2rem;
+  align-items: stretch;
+  padding: 0 2rem;
 }
 
 .about-intro-text {
-  padding: 0 5%;
-  padding-right: 2rem;
+  padding: 0 2rem;
 }
 
 .about-intro-text h2 {
@@ -218,35 +217,26 @@ body {
   transform: translateY(-2px);
 }
 
-.about-intro-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
 .about-intro-image {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  border: none;
-  padding-right: 5%;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* Carousel Styles */
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  padding-top: 133%;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border: none;
-  outline: none;
+  overflow: hidden;
 }
 
 .carousel-wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: #f5f5f5;
@@ -254,15 +244,20 @@ body {
 
 .carousel-slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transform: translateX(100%);
 }
 
 .carousel-slide.active {
   opacity: 1;
+  transform: translateX(0);
 }
 
 .carousel-dots {
@@ -404,15 +399,6 @@ body {
 @media (max-width: 1024px) {
   .about-intro-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .about-intro-text {
-    padding: 0 3%;
-  }
-
-  .about-intro-image {
-    padding-right: 3%;
   }
 
   .expertise-grid {
@@ -466,18 +452,16 @@ body {
   }
 
   .about-intro-container {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
-    min-height: auto;
+    padding: 0 1rem;
   }
 
   .about-intro-text {
-    padding: 0 3%;
+    padding: 0 1rem;
   }
 
   .about-intro-image {
-    padding-right: 3%;
-    height: 350px;
+    width: 100%;
   }
 
   .about-intro-text p {
@@ -514,34 +498,6 @@ body {
     padding: 0.8rem 1.5rem;
     font-size: 0.7rem;
   }
-
-  .carousel-container {
-    height: 300px;
-  }
-
-  .carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-  }
-
-  .footer-main {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .footer-links-section {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .footer-col h4 {
-    font-size: 0.9rem;
-  }
-
-  .footer-col a,
-  .footer-col p {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -576,15 +532,11 @@ body {
 
   .about-intro-container {
     gap: 1rem;
+    padding: 0 0.5rem;
   }
 
   .about-intro-text {
-    padding: 0 2%;
-  }
-
-  .about-intro-image {
-    padding-right: 2%;
-    height: 280px;
+    padding: 0 0.5rem;
   }
 
   .about-intro-text h2 {
@@ -640,37 +592,5 @@ body {
   .cta-button {
     padding: 0.7rem 1.2rem;
     font-size: 0.65rem;
-  }
-
-  .carousel-container {
-    height: 250px;
-  }
-
-  .carousel-dots {
-    bottom: 10px;
-  }
-
-  .carousel-dots .dot {
-    width: 8px;
-    height: 8px;
-    gap: 6px;
-  }
-
-  .footer-wrapper {
-    padding: 2rem 2%;
-  }
-
-  .footer-col h4 {
-    font-size: 0.85rem;
-  }
-
-  .footer-col a,
-  .footer-col p {
-    font-size: 0.75rem;
-  }
-
-  .whatsapp-btn img {
-    width: 45px;
-    height: 45px;
   }
 }

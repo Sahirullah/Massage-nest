@@ -32,7 +32,7 @@ function App() {
               <li><a href="#home">HOME</a></li>
               <li><Link to="/about">ABOUT US</Link></li>
               <li><ServiceDropdown /></li>
-              <li><a href="#packages">OUR PACKAGES</a></li>
+              <li><Link to="/packages">OUR PACKAGES</Link></li>
               <li><a href="#blog">OUR BLOG</a></li>
               <li><a href="#contact">CONTACT US</a></li>
               <li><a href="#book" className="book-btn">BOOK NOW</a></li>
