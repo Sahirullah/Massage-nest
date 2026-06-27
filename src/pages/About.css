@@ -1,5 +1,19 @@
 /* About Page Styles */
 
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* About Header - Same as Home */
 .header {
   background: #205B4F;
@@ -53,6 +67,20 @@
   overflow: visible;
   position: relative;
   z-index: 100;
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .nav {
+    display: none !important;
+  }
 }
 
 .nav li {
@@ -393,14 +421,30 @@
 }
 
 @media (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
   .header {
     min-height: 250px;
   }
 
   .header-top {
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    position: relative;
     padding: 1rem 3%;
+  }
+  
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mobile-menu-wrapper {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .nav ul {

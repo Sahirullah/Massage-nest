@@ -8,6 +8,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -47,6 +49,26 @@ body {
   overflow: visible;
 }
 
+@media (max-width: 768px) {
+  .header-top {
+    justify-content: center;
+    position: relative;
+  }
+  
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mobile-menu-wrapper {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -73,6 +95,20 @@ body {
   overflow: visible;
   position: relative;
   z-index: 100;
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .nav {
+    display: none !important;
+  }
 }
 
 .nav li {
@@ -902,6 +938,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
   .header {
     min-height: 350px;
   }

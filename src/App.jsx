@@ -15,6 +15,7 @@ import beautyIcon from './assets/beauty.png'
 import massageIcon from './assets/massage.png'
 import whatsappBtn from './assets/Whatsapp-btn.avif'
 import ServiceDropdown from './components/ServiceDropdown'
+import MobileMenu from './components/MobileMenu'
 import './App.css'
 
 function App() {
@@ -24,9 +25,9 @@ function App() {
         <div className="header-top">
           <div className="logo-section">
             <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
-            <span className="logo-text">Shukran Home Spa</span>
+            <span className="logo-text"></span>
           </div>
-          <nav className="nav">
+          <nav className="nav desktop-nav">
             <ul>
               <li><a href="#home">HOME</a></li>
               <li><Link to="/about">ABOUT US</Link></li>
@@ -37,6 +38,7 @@ function App() {
               <li><a href="#book" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
+          <MobileMenu />
         </div>
 
         <div className="hero-section">

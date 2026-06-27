@@ -7,6 +7,7 @@ import img2 from '../assets/About2.jpg'
 import img3 from '../assets/About3.jpg'
 import whatsappBtn from '../assets/Whatsapp-btn.avif'
 import ServiceDropdown from '../components/ServiceDropdown'
+import MobileMenu from '../components/MobileMenu'
 import '../pages/About.css'
 
 export default function About() {
@@ -22,14 +23,13 @@ export default function About() {
 
   return (
     <>
-      {/* Header - Same as Home */}
-      <header className="header" style={{backgroundImage: `url(${heroSec})`}}>
+      <header className="header desktop-header" style={{backgroundImage: `url(${heroSec})`}}>
         <div className="header-top">
           <div className="logo-section">
             <img src={logo} alt="Shukran Home Spa Logo" className="logo" />
             <span className="logo-text">Shukran Home Spa</span>
           </div>
-          <nav className="nav">
+          <nav className="nav desktop-nav">
             <ul>
               <li><a href="/">HOME</a></li>
               <li><Link to="/about">ABOUT US</Link></li>
@@ -40,6 +40,7 @@ export default function About() {
               <li><a href="#book" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
+          <MobileMenu />
         </div>
 
         <div className="about-hero-section">

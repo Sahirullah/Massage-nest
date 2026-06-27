@@ -1,0 +1,123 @@
+.mobile-nav {
+  display: none;
+  width: 100%;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  background: #205B4F;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-section .logo {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  color: #d4af37;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  padding: 0;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.hamburger span.active:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger span.active:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger span.active:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.mobile-nav-menu {
+  background: #205B4F;
+  border-bottom: 2px solid #d4af37;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 0;
+}
+
+.mobile-nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.9rem 4%;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  display: block;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  font-weight: 500;
+}
+
+.mobile-nav-links a:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #d4af37;
+}
+
+.book-btn-mobile {
+  background: #d4af37;
+  color: #205B4F !important;
+  font-weight: 700;
+  margin: 1rem 4%;
+  border-radius: 0;
+}
+
+.book-btn-mobile:hover {
+  background: #c99e2e;
+  border-bottom: none;
+}
+
+/* Show mobile nav only on small screens */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+  }
+}
