@@ -37,26 +37,26 @@ export default function Contact() {
       </header>
 
       {/* Contact Section */}
-      <section className="contact-section">
+      <section className="contact-section" data-aos="fade-up">
         <div className="contact-container">
           <div className="contact-wrapper">
             {/* Left Side - Appointment Info */}
-            <div className="contact-left">
-              <div className="waiting-text">WHAT ARE YOU WAITING FOR...</div>
+            <div className="contact-left" data-aos="slide-right">
+              <div className="waiting-text" data-aos="fade-up">WHAT ARE YOU WAITING FOR...</div>
               
-              <h2 className="appointment-title">Make an appointment</h2>
+              <h2 className="appointment-title" data-aos="zoom-in" data-aos-delay="200">Make an appointment</h2>
               
-              <div className="info-block">
+              <div className="info-block" data-aos="fade-up" data-aos-delay="300">
                 <h4 className="info-label">📍 OUR LOCATION</h4>
                 <p className="info-value">Dubai</p>
               </div>
 
-              <div className="info-block">
+              <div className="info-block" data-aos="fade-up" data-aos-delay="400">
                 <h4 className="info-label">⏰ OPENING HOURS</h4>
                 <p className="info-value">11am to 10pm</p>
               </div>
 
-              <div className="info-block">
+              <div className="info-block" data-aos="fade-up" data-aos-delay="500">
                 <h4 className="info-label">📞 CONTACT</h4>
                 <p className="contact-item">Phone: <a href="tel:+971504480363">+971504480363</a></p>
                 <p className="contact-item">Email: <a href="mailto:info.click4massage@gmail.com">info.click4massage@gmail.com</a></p>
@@ -64,11 +64,11 @@ export default function Contact() {
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="contact-right">
-              <h2 className="quote-title">Get a free quote</h2>
-              <div className="quote-divider"></div>
+            <div className="contact-right" data-aos="slide-left">
+              <h2 className="quote-title" data-aos="zoom-in">Get a free quote</h2>
+              <div className="quote-divider" data-aos="fade-up" data-aos-delay="200"></div>
               
-              <form className="contact-form">
+              <form className="contact-form" data-aos="fade-up" data-aos-delay="300">
                 <div className="form-row">
                   <input type="text" placeholder="Your Name*" required />
                   <input type="text" placeholder="Last name*" required />
@@ -86,7 +86,7 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
+      <section className="map-section" data-aos="zoom-in">
         <iframe
           title="Click4Massage Location - Islamabad"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.3245652234974!2d74.35873587346153!3d33.72345467346153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07e6d65d5%3A0x6b0e0d0e0d0e0d0e!2sIslamabad!5e0!3m2!1sen!2s!4v1234567890"

@@ -39,62 +39,62 @@ export default function SportsMassage() {
       </header>
 
       {/* Main Content Section */}
-      <section className="service-content">
+      <section className="service-content" data-aos="fade-up">
         <div className="service-container">
           
           {/* Intro Text */}
-          <div className="intro-text">
+          <div className="intro-text" data-aos="fade-up">
             <p>Whether you're an athlete, fitness enthusiast, or someone recovering from injury, sports massage offers targeted relief.</p>
             <p>Our specialized sports massage therapists use proven techniques to enhance performance, accelerate recovery, and prevent injuries. Discover how sports massage can take your fitness to the next level.</p>
           </div>
 
           {/* Section 1: Sports Massage Benefits */}
-          <div className="content-block">
+          <div className="content-block" data-aos="slide-right">
             <div className="content-text">
               <h3 className="section-label">CLICK4MASSAGE</h3>
-              <h2>Sports Massage at Click4Massage</h2>
+              <h2 data-aos="zoom-in">Sports Massage at Click4Massage</h2>
               <p>Our sports massage therapy is designed specifically for athletes and active individuals seeking to enhance performance while minimizing injury.</p>
               <p>From pre-event preparation to post-workout recovery, our certified sports massage therapists employ advanced techniques to optimize your body's potential and expedite recovery.</p>
               <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="service-btn">CONTACT US</a>
             </div>
-            <div className="content-image">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img1} alt="Sports Massage" />
             </div>
           </div>
 
           {/* Why Choose Section with Feature Cards */}
-          <div className="why-choose-section">
+          <div className="why-choose-section" data-aos="fade-up">
             <h3 className="section-label">CLICK4MASSAGE</h3>
-            <h2>Experience the Benefits of Sports Massage at Click4Massage</h2>
+            <h2 data-aos="zoom-in">Experience the Benefits of Sports Massage at Click4Massage</h2>
             <p className="section-subtitle">Enhance your athletic performance with our specialized sports massage services.</p>
             
             <div className="features-grid">
-              <div className="feature-card">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="0">
                 <div className="feature-icon">💪</div>
                 <h4>Enhanced Flexibility</h4>
                 <p>Sports massage increases range of motion and muscle elasticity, helping you achieve peak flexibility and powerful motion.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="100">
                 <div className="feature-icon">⚡</div>
                 <h4>Stress Reduction</h4>
                 <p>Pre-event anxiety can impact performance. Our sports massage alleviates stress and boosts mental clarity for optimal performance.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="200">
                 <div className="feature-icon">🏆</div>
                 <h4>Performance Improvement</h4>
                 <p>By reducing lactic acid buildup and promoting circulation, sports massage enhances your athletic potential and power output.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="300">
                 <div className="feature-icon">⚕️</div>
                 <h4>Injury Prevention</h4>
                 <p>Regular sports massage identifies problem areas before they become injuries, keeping you healthy and training consistently.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="400">
                 <div className="feature-icon">🔄</div>
                 <h4>Faster Recovery</h4>
                 <p>Accelerate muscle recovery and reduce soreness after intense training or competition with targeted sports massage therapy.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="zoom-in" data-aos-delay="500">
                 <div className="feature-icon">🎯</div>
                 <h4>Personalized Treatment</h4>
                 <p>Our therapists customize each session based on your sport, training goals, and specific problem areas.</p>
@@ -103,13 +103,13 @@ export default function SportsMassage() {
           </div>
 
           {/* Section 2: Customized Sports Massage */}
-          <div className="content-block reverse">
-            <div className="content-image">
+          <div className="content-block reverse" data-aos="slide-left">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img2} alt="Customized Sports Massage" />
             </div>
             <div className="content-text">
               <h3 className="section-label">CLICK4MASSAGE</h3>
-              <h2>Customized Sports Massage In Dubai To Address Your Unique Needs</h2>
+              <h2 data-aos="zoom-in">Customized Sports Massage In Dubai To Address Your Unique Needs</h2>
               <p>At Click4Massage, we understand that every athlete is different. Our therapists conduct a thorough assessment to identify the specific muscle groups and problem areas relevant to your sport and training regimen.</p>
               <p>Whether you're dealing with tight hamstrings, shoulder tension, lower back strain, or any other sports-related concern, we tailor our approach to address your individual needs.</p>
               
@@ -122,9 +122,9 @@ export default function SportsMassage() {
       </section>
 
       {/* CTA Section */}
-      <section className="service-cta-section">
+      <section className="service-cta-section" data-aos="fade-up">
         <div className="cta-content">
-          <h2>Prioritize Your Athletic Performance and Schedule Your Sports Massage</h2>
+          <h2 data-aos="zoom-in">Prioritize Your Athletic Performance and Schedule Your Sports Massage</h2>
           <p>Invest in your athletic potential with professional sports massage therapy. Book your personalized session today and experience the difference!</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
         </div>

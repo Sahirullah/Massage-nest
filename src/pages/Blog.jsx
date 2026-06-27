@@ -88,11 +88,11 @@ export default function Blog() {
       </header>
 
       {/* Blog Section */}
-      <section className="blog-section">
+      <section className="blog-section" data-aos="fade-up">
         <div className="blog-container">
           <div className="blog-grid">
-            {blogPosts.map((post) => (
-              <article key={post.id} className="blog-card">
+            {blogPosts.map((post, index) => (
+              <article key={post.id} className="blog-card" data-aos="fade-up" data-aos-delay={`${(index % 3) * 100}`}>
                 <div className="blog-image">
                   <img src={post.image} alt={post.title} />
                 </div>

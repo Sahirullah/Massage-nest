@@ -41,15 +41,15 @@ export default function DeepTissueMassage() {
       </header>
 
       {/* Main Content Section */}
-      <section className="service-content">
+      <section className="service-content" data-aos="fade-up">
         <div className="service-container">
           
           {/* Section 1: Get Ultimate Relaxation */}
-          <div className="content-block">
-            <div className="content-image">
+          <div className="content-block" data-aos="slide-right">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img1} alt="Ultimate Relaxation" />
             </div>
-            <div className="content-text">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">GET ULTIMATE RELAXATION</h3>
               <h2>Get Ultimate Relaxation with Deep Tissue Massage at Home in Dubai</h2>
               <p>Discover the perfect blend of comfort and therapy. Our deep tissue massage experts use advanced techniques to release tension and stress. At Click4Massage, we bring the spa to you, ensuring maximum comfort in your own home.</p>
@@ -58,11 +58,11 @@ export default function DeepTissueMassage() {
           </div>
 
           {/* Section 2: Deep Tissue Techniques */}
-          <div className="content-block reverse">
-            <div className="content-image">
+          <div className="content-block reverse" data-aos="slide-left">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img2} alt="Deep Tissue Techniques" />
             </div>
-            <div className="content-text">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">PROVEN TECHNIQUE</h3>
               <h2>Our Deep Tissue Techniques Release Chronic Tension</h2>
               <p>Deep tissue massage targets the deepest layers of muscle and connective tissue. Our trained therapists use firm pressure and slow strokes to release tension and promote healing. This technique is effective for chronic muscle tension, stress relief, and improving circulation.</p>
@@ -76,11 +76,11 @@ export default function DeepTissueMassage() {
           </div>
 
           {/* Section 3: Targeted Relief */}
-          <div className="content-block">
-            <div className="content-image">
+          <div className="content-block" data-aos="slide-right">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img3} alt="Targeted Relief" />
             </div>
-            <div className="content-text">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">TARGETED RELIEF</h3>
               <h2>Targeted Relief for the Whole Body</h2>
               <p>Whether you're experiencing back pain, shoulder tension, or general muscle stiffness, our deep tissue massage provides targeted relief. We focus on problem areas and use specialized techniques to alleviate discomfort and promote healing.</p>
@@ -94,11 +94,11 @@ export default function DeepTissueMassage() {
           </div>
 
           {/* Section 4: Realign Your Body */}
-          <div className="content-block reverse">
-            <div className="content-image">
+          <div className="content-block reverse" data-aos="slide-left">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img4} alt="Realign Body" />
             </div>
-            <div className="content-text">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">REALIGN YOUR BODY</h3>
               <h2>Realign Your Body and Relieve Discomfort</h2>
               <p>Deep tissue massage helps realign your body by releasing muscle tension and improving flexibility. Our therapists work with precision to address muscle imbalances and help you achieve better posture, reduced pain, and overall wellness.</p>
@@ -115,8 +115,8 @@ export default function DeepTissueMassage() {
       </section>
 
       {/* CTA Section */}
-      <section className="service-cta-section">
-        <div className="cta-content">
+      <section className="service-cta-section" data-aos="fade-up">
+        <div className="cta-content" data-aos="zoom-in">
           <h2>Book Your Deep Tissue Massage Today</h2>
           <p>Experience the therapeutic benefits of professional deep tissue massage in the comfort of your own home. Contact Click4Massage to schedule your appointment.</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT</a>

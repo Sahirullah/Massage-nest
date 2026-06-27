@@ -28,7 +28,7 @@ body {
   background-size: auto 100%;
   background-position: right center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   padding: 0;
   min-height: 700px;
   display: flex;
@@ -549,6 +549,7 @@ body {
 /* Pricing Section */
 .pricing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png') center/cover;
+  background-attachment: fixed;
   padding: 2.5rem 5%;
   width: 100%;
   position: relative;

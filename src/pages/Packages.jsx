@@ -52,11 +52,11 @@ export default function Packages() {
       </header>
 
       {/* Packages Section */}
-      <section className="packages-section">
+      <section className="packages-section" data-aos="fade-up">
         <div className="packages-container">
           <div className="packages-grid">
             {packages.map((pkg, index) => (
-              <div key={index} className="package-item">
+              <div key={index} className="package-item" data-aos="fade-up" data-aos-delay={`${(index % 4) * 75}`}>
                 <div className="package-name">{pkg.name}</div>
                 <div className="package-details">
                   <span className="package-price">{pkg.price} AED</span>
@@ -65,7 +65,7 @@ export default function Packages() {
               </div>
             ))}
           </div>
-          <button className="contact-packages-btn">CONTACT US</button>
+          <button className="contact-packages-btn" data-aos="zoom-in">CONTACT US</button>
         </div>
       </section>
 

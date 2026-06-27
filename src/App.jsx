@@ -52,61 +52,61 @@ function App() {
         </div>
       </header>
 
-      <section className="amenities">
+      <section className="amenities" data-aos="fade-up">
         <div className="amenities-container">
-          <h2>Amenities at our spa</h2>
-          <p>At Massage Nest, we bring the luxury of a spa, ensuring maximum comfort and convenience. With premium massage beds, aromatic oils, soothing music, and tranquil ambiance, every session is a journey towards complete bliss.</p>
+          <h2 data-aos="zoom-in">Amenities at our spa</h2>
+          <p data-aos="fade-up" data-aos-delay="200">At Massage Nest, we bring the luxury of a spa, ensuring maximum comfort and convenience. With premium massage beds, aromatic oils, soothing music, and tranquil ambiance, every session is a journey towards complete bliss.</p>
         </div>
       </section>
 
-      <section className="massage-types">
+      <section className="massage-types" data-aos="fade-up">
         <div className="massage-types-container">
-          <h2>Different Types of Massage Provided By Us</h2>
+          <h2 data-aos="zoom-in">Different Types of Massage Provided By Us</h2>
           
           <div className="massage-grid">
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="100">
               <img src={img1} alt="Thai Massage" />
               <h3>Thai Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
             
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="200">
               <img src={img2} alt="Couple Massage" />
               <h3>Couple Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
             
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="300">
               <img src={img3} alt="Sport Massage" />
               <h3>Sport Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
             
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="400">
               <img src={img5} alt="Mobile Massage" />
               <h3>Mobile Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
             
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="100">
               <img src={img6} alt="Maderotherapy Massage" />
               <h3>Maderotherapy Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
             
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="200">
               <img src={img7} alt="Deep Tissue Massage" />
               <h3>Deep Tissue Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
             
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="300">
               <img src={img8} alt="Relaxation Massage" />
               <h3>Relaxation Massage</h3>
               <a href="#" className="view-details">View Details</a>
             </div>
 
-            <div className="massage-card">
+            <div className="massage-card" data-aos="fade-up" data-aos-delay="400">
               <img src={img4} alt="Hot Stone Massage" />
               <h3>Hot Stone Massage</h3>
               <a href="#" className="view-details">View Details</a>
@@ -115,31 +115,31 @@ function App() {
         </div>
       </section>
 
-      <section className="why-choose">
+      <section className="why-choose" data-aos="fade-up">
         <div className="why-choose-wrapper">
           <div className="why-choose-container">
-            <div className="why-choose-content">
-              <h2>Why Choose Click4Massage for Your Wellness Needs?</h2>
-              <h2 style={{fontSize: '2rem', color: '#1a1a1a', marginTop: '0', marginBottom: '1rem', fontWeight: 600, lineHeight: 1.2}}>Give yourself the well-deserved treatment</h2>
-            <p>Experience the expertise of our professional therapists who specialize in delivering unique spa experiences tailored to your needs. Let our skilled hands melt away the stresses of your day, leaving you feeling refreshed, rejuvenated, and renewed.</p>
-              <p>Indulge in a variety of massage options designed to address every ache, pain, and tension. From Thai Massage to Deep Tissue Massage, our range of services caters to all your relaxation needs.</p>
-              <button className="book-btn">BOOK NOW</button>
+            <div className="why-choose-content" data-aos="slide-right">
+              <h2 data-aos="zoom-in">Why Choose Click4Massage for Your Wellness Needs?</h2>
+              <h2 style={{fontSize: '2rem', color: '#1a1a1a', marginTop: '0', marginBottom: '1rem', fontWeight: 600, lineHeight: 1.2}} data-aos="zoom-in" data-aos-delay="200">Give yourself the well-deserved treatment</h2>
+            <p data-aos="fade-up" data-aos-delay="300">Experience the expertise of our professional therapists who specialize in delivering unique spa experiences tailored to your needs. Let our skilled hands melt away the stresses of your day, leaving you feeling refreshed, rejuvenated, and renewed.</p>
+              <p data-aos="fade-up" data-aos-delay="400">Indulge in a variety of massage options designed to address every ache, pain, and tension. From Thai Massage to Deep Tissue Massage, our range of services caters to all your relaxation needs.</p>
+              <button className="book-btn" data-aos="zoom-in" data-aos-delay="500">BOOK NOW</button>
             </div>
 
-            <div className="why-choose-image">
+            <div className="why-choose-image" data-aos="slide-left">
               <img src={img9} alt="Professional Massage" />
             </div>
 
             <div className="benefits">
-              <div className="benefit-item">
+              <div className="benefit-item" data-aos="zoom-in" data-aos-delay="100">
                 <img src={wellnessIcon} alt="Wellness" className="benefit-icon" />
                 <h3>Wellness</h3>
               </div>
-              <div className="benefit-item">
+              <div className="benefit-item" data-aos="zoom-in" data-aos-delay="200">
                 <img src={beautyIcon} alt="Beauty" className="benefit-icon" />
                 <h3>Beauty</h3>
               </div>
-              <div className="benefit-item">
+              <div className="benefit-item" data-aos="zoom-in" data-aos-delay="300">
                 <img src={massageIcon} alt="Massage" className="benefit-icon" />
                 <h3>Massage</h3>
               </div>

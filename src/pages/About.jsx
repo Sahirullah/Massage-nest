@@ -52,16 +52,16 @@ export default function About() {
       </header>
 
       {/* About Intro Section */}
-      <section className="about-intro-section">
+      <section className="about-intro-section" data-aos="fade-up">
         <div className="about-intro-container">
-          <div className="about-intro-text">
-            <h2>CLICK4MASSAGE</h2>
-            <p>
+          <div className="about-intro-text" data-aos="slide-right">
+            <h2 data-aos="zoom-in">CLICK4MASSAGE</h2>
+            <p data-aos="fade-up" data-aos-delay="200">
               Click4Massage is a trusted home massage service in Dubai, offering professional spa and wellness treatments in the comfort of your home. Our experienced therapists provide personalized massage therapies designed to relieve stress, reduce muscle tension, improve circulation, and promote overall well-being. We create a relaxing spa experience using professional techniques tailored to your needs. Whether you're looking for relaxation, pain relief, or a rejuvenating wellness session, Click4Massage is committed to delivering exceptional home spa services across Dubai.
             </p>
-            <button className="contact-us-btn">CONTACT US</button>
+            <button className="contact-us-btn" data-aos="zoom-in" data-aos-delay="300">CONTACT US</button>
           </div>
-          <div className="about-intro-image">
+          <div className="about-intro-image" data-aos="slide-left">
             <div className="carousel-container">
               <div className="carousel-wrapper">
                 {slides.map((slide, index) => (
@@ -88,21 +88,21 @@ export default function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="expertise-section">
+      <section className="expertise-section" data-aos="fade-up">
         <div className="expertise-container">
-          <h2>Our Expertise</h2>
-          <p className="expertise-subtitle">Click4Massage stands out in Dubai for its distinctive offerings, backed by:</p>
+          <h2 data-aos="zoom-in">Our Expertise</h2>
+          <p className="expertise-subtitle" data-aos="fade-up" data-aos-delay="200">Click4Massage stands out in Dubai for its distinctive offerings, backed by:</p>
           <div className="expertise-grid">
-            <div className="expertise-card">
+            <div className="expertise-card" data-aos="fade-up" data-aos-delay="100">
               <h4>Extensive expertise in our niche</h4>
             </div>
-            <div className="expertise-card">
+            <div className="expertise-card" data-aos="fade-up" data-aos-delay="200">
               <h4>A team of skilled professionals driving our success</h4>
             </div>
-            <div className="expertise-card">
+            <div className="expertise-card" data-aos="fade-up" data-aos-delay="300">
               <h4>A diverse range of massage services tailored to your needs</h4>
             </div>
-            <div className="expertise-card">
+            <div className="expertise-card" data-aos="fade-up" data-aos-delay="400">
               <h4>Cost-effective solutions that prioritize your well-being</h4>
             </div>
           </div>
@@ -110,12 +110,12 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="about-cta-section">
-        <div className="cta-content">
-          <p className="cta-label">CLICK4MASSAGE</p>
-          <h2>Count on Click4Massage for the Best Spa Experience</h2>
-          <p>Contact us now to book your at-home massage service and embark on a journey to inner peace and tranquility.</p>
-          <button className="cta-button">BOOK AN APPOINTMENT →</button>
+      <section className="about-cta-section" data-aos="fade-up">
+        <div className="cta-content" data-aos="zoom-in">
+          <p className="cta-label" data-aos="fade-up" data-aos-delay="100">CLICK4MASSAGE</p>
+          <h2 data-aos="fade-up" data-aos-delay="200">Count on Click4Massage for the Best Spa Experience</h2>
+          <p data-aos="fade-up" data-aos-delay="300">Contact us now to book your at-home massage service and embark on a journey to inner peace and tranquility.</p>
+          <button className="cta-button" data-aos="zoom-in" data-aos-delay="400">BOOK AN APPOINTMENT →</button>
         </div>
       </section>
 

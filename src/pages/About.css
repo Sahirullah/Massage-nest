@@ -20,7 +20,7 @@ body {
   background-size: auto 100%;
   background-position: right center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   padding: 0;
   min-height: 400px;
   display: flex;
@@ -341,6 +341,7 @@ body {
 .about-cta-section {
   background: linear-gradient(rgba(32, 91, 79, 0.8), rgba(32, 91, 79, 0.8)), 
               url('../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png') center/cover;
+  background-attachment: fixed;
   padding: 5rem 5%;
   text-align: center;
   color: white;

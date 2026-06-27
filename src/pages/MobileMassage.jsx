@@ -40,62 +40,62 @@ export default function MobileMassage() {
       </header>
 
       {/* Main Content Section */}
-      <section className="service-content">
+      <section className="service-content" data-aos="fade-up">
         <div className="service-container">
           
           {/* Intro Text */}
-          <div className="intro-text">
+          <div className="intro-text" data-aos="fade-up">
             <p>Imagine being able to enjoy a relaxing, rejuvenating massage without having to leave your home.</p>
             <p>Our mobile massage therapists come directly to you, providing tailor-made spa experiences designed around your needs. Keep reading to learn why our on-demand massage service is the ultimate way to destress!</p>
           </div>
 
           {/* Section 1: Ease Daily Stress */}
-          <div className="content-block">
-            <div className="content-text">
+          <div className="content-block" data-aos="slide-right">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Ease Daily Stress With Mobile Massages</h2>
               <p>Our mobile massage in Dubai brings all the benefits of a spa directly into your living room.</p>
               <p>No rushing to appointments across town or uncomfortable clinic settings. Just tranquil, therapeutic massages from the best comfort – your home!</p>
               <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="service-btn">CONTACT US</a>
             </div>
-            <div className="content-image">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img23} alt="Stress Relief" />
             </div>
           </div>
 
           {/* Why Choose Section with Feature Cards */}
-          <div className="why-choose-section">
-            <h3 className="section-label">CLICK4MASSAGE</h3>
-            <h2>Why Choose Our Home Massage Service?</h2>
-            <p className="section-subtitle">Indulge in an oasis of calm with our mobile massages designed around you.</p>
+          <div className="why-choose-section" data-aos="fade-up">
+            <h3 className="section-label" data-aos="fade-up">CLICK4MASSAGE</h3>
+            <h2 data-aos="zoom-in">Why Choose Our Home Massage Service?</h2>
+            <p className="section-subtitle" data-aos="fade-up" data-aos-delay="200">Indulge in an oasis of calm with our mobile massages designed around you.</p>
             
             <div className="features-grid">
-              <div className="feature-card">
+              <div className="feature-card" data-aos="fade-up" data-aos-delay="100">
                 <div className="feature-icon">👨‍⚕️</div>
                 <h4>Licensed, Experienced Therapists</h4>
                 <p>Each member of our team brings professional credentials along with knowledge of techniques like Swedish, Deep Tissue, and Thai massage.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="fade-up" data-aos-delay="150">
                 <div className="feature-icon">👥</div>
                 <h4>Personalized Sessions</h4>
                 <p>We tailor every massage to your problem areas, pressure preferences, and requested techniques.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="fade-up" data-aos-delay="200">
                 <div className="feature-icon">🧴</div>
                 <h4>Quality Massage Oils & Supplies</h4>
                 <p>Our therapists bring premium massage oils, lotions, scents, towels, and more.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="fade-up" data-aos-delay="250">
                 <div className="feature-icon">📱</div>
                 <h4>Easy Online Booking</h4>
                 <p>Our user-friendly system makes scheduling effortless 24/7.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="fade-up" data-aos-delay="300">
                 <div className="feature-icon">🏢</div>
                 <h4>Flexible Scheduling</h4>
                 <p>Session lengths range from 30 minutes to 120 minutes. Book on your schedule.</p>
               </div>
-              <div className="feature-card">
+              <div className="feature-card" data-aos="fade-up" data-aos-delay="350">
                 <div className="feature-icon">💳</div>
                 <h4>Payment Options</h4>
                 <p>We accept credit cards and cash. Special package rates are available!</p>
@@ -104,11 +104,11 @@ export default function MobileMassage() {
           </div>
 
           {/* Section 2: Experience Total Relaxation */}
-          <div className="content-block reverse">
-            <div className="content-image">
+          <div className="content-block reverse" data-aos="slide-left">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img22} alt="Total Relaxation" />
             </div>
-            <div className="content-text">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Our Deep Tissue Techniques Release Chronic Tension</h2>
               <p>We use advanced massage techniques like trigger point therapy, myofascial stretching, and cross-fiber friction to target those inner muscle layers that just won't relax.</p>
@@ -120,8 +120,8 @@ export default function MobileMassage() {
           </div>
 
           {/* Section 3: Pamper Yourself */}
-          <div className="content-block">
-            <div className="content-text">
+          <div className="content-block" data-aos="slide-right">
+            <div className="content-text" data-aos="fade-up" data-aos-delay="200">
               <h3 className="section-label">CLICK4MASSAGE</h3>
               <h2>Pamper Yourself With Luxury Mobile Massages</h2>
               <p>Our luxury mobile massage sessions start with a consultation to tailor the treatments to your needs. Your assigned massage pro will craft each phase of your session around your responses. We transform whatever room you desire into a blissful spa sanctuary.</p>
@@ -138,7 +138,7 @@ export default function MobileMassage() {
                 <li>Better quality sleep</li>
               </ul>
             </div>
-            <div className="content-image">
+            <div className="content-image" data-aos="zoom-in">
               <img src={img21} alt="Luxury Massage" />
             </div>
           </div>
@@ -147,8 +147,8 @@ export default function MobileMassage() {
       </section>
 
       {/* CTA Section */}
-      <section className="service-cta-section">
-        <div className="cta-content">
+      <section className="service-cta-section" data-aos="fade-up">
+        <div className="cta-content" data-aos="zoom-in">
           <h2>Prioritize Self-Care and Schedule Your Massage</h2>
           <p>Reward yourself with an indulgent home massage experience with our dedicated team any day, any time. Call or book online now!</p>
           <a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="cta-button">BOOK AN APPOINTMENT →</a>
