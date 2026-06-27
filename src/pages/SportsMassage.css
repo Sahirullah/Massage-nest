@@ -571,14 +571,18 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  background: #25D366;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .whatsapp-btn img {
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
