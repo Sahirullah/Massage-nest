@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './ServiceDropdown.css'
 
 const ServiceDropdown = () => {
@@ -7,13 +8,13 @@ const ServiceDropdown = () => {
   const timeoutRef = useRef(null)
 
   const services = [
-    'DEEP TISSUE MASSAGE IN DUBAI',
-    'MOBILE MASSAGE IN DUBAI',
-    'SPORTS MASSAGE IN DUBAI',
-    'COUPLES MASSAGE IN DUBAI',
-    'THAI MASSAGE IN DUBAI',
-    'MADEROTHERAPY MASSAGE IN DUBAI',
-    'RELAXATION MASSAGE IN DUBAI'
+    { name: 'DEEP TISSUE MASSAGE IN DUBAI', path: '/deep-tissue-massage' },
+    { name: 'MOBILE MASSAGE IN DUBAI', path: '#' },
+    { name: 'SPORTS MASSAGE IN DUBAI', path: '#' },
+    { name: 'COUPLES MASSAGE IN DUBAI', path: '#' },
+    { name: 'THAI MASSAGE IN DUBAI', path: '#' },
+    { name: 'MADEROTHERAPY MASSAGE IN DUBAI', path: '#' },
+    { name: 'RELAXATION MASSAGE IN DUBAI', path: '#' }
   ]
 
   const handleMouseEnter = () => {
@@ -27,6 +28,10 @@ const ServiceDropdown = () => {
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false)
     }, 200)
+  }
+
+  const handleServiceClick = () => {
+    setIsOpen(false)
   }
 
   return (
@@ -47,17 +52,28 @@ const ServiceDropdown = () => {
       {isOpen && (
         <div className="dropdown-menu">
           {services.map((service, index) => (
-            <a 
-              href="#" 
-              key={index} 
-              className="dropdown-item" 
-              onClick={(e) => {
-                e.preventDefault()
-                setIsOpen(false)
-              }}
-            >
-              {service}
-            </a>
+            service.path !== '#' ? (
+              <Link 
+                to={service.path}
+                key={index} 
+                className="dropdown-item" 
+                onClick={handleServiceClick}
+              >
+                {service.name}
+              </Link>
+            ) : (
+              <a 
+                href="#" 
+                key={index} 
+                className="dropdown-item" 
+                onClick={(e) => {
+                  e.preventDefault()
+                  setIsOpen(false)
+                }}
+              >
+                {service.name}
+              </a>
+            )
           ))}
         </div>
       )}
