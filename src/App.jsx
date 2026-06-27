@@ -29,13 +29,13 @@ function App() {
           </div>
           <nav className="nav desktop-nav">
             <ul>
-              <li><a href="#home">HOME</a></li>
+              <li><Link to="/">HOME</Link></li>
               <li><Link to="/about">ABOUT US</Link></li>
               <li><ServiceDropdown /></li>
               <li><Link to="/packages">OUR PACKAGES</Link></li>
-              <li><a href="#blog">OUR BLOG</a></li>
-              <li><a href="#contact">CONTACT US</a></li>
-              <li><a href="#book" className="book-btn">BOOK NOW</a></li>
+              <li><Link to="/blog">OUR BLOG</Link></li>
+              <li><Link to="/contact">CONTACT US</Link></li>
+              <li><a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
           <MobileMenu />

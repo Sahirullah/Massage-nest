@@ -1,25 +1,61 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/logo.png'
 import heroSec from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png'
+import img1 from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/1.jpg'
+import img2 from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/2.jpg'
+import img3 from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/3.jpg'
+import img4 from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/4.jpg'
+import img5 from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/5.jpg'
+import img6 from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/6.jpg'
 import whatsappBtn from '../assets/Whatsapp-btn.avif'
 import ServiceDropdown from '../components/ServiceDropdown'
 import MobileMenu from '../components/MobileMenu'
-import './Packages.css'
+import './Blog.css'
 
-export default function Packages() {
-  const packages = [
-    { name: 'Full Body Relaxation Massage', price: '149', duration: '(60 min 149 AED/ 90 min 199 AED)' },
-    { name: 'Thai Massage', price: '199', duration: '( 60 min 199 AED / 90 min 249 AED)' },
-    { name: 'Swedish Massage', price: '149', duration: '(60 min 149 AED/ 90 min 199 AED)' },
-    { name: 'Deep Tissue Massage', price: '199', duration: '( 60 min 199 AED / 90 min 249 AED)' },
-    { name: 'Maderotherapy Massage', price: '199', duration: '( 60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Hot Oil Relaxation Massage', price: '175', duration: '(60 min 175 AED/ 90 min 225 AED)' },
-    { name: 'Lymphatic Drainage Massage', price: '199', duration: '( 60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Couple Relaxation Massage', price: '299', duration: '( 60 min couple massage 299 AED)' },
-    { name: 'Sport Massage', price: '199', duration: '(60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Lomi Lomi Massage', price: '149', duration: '( 60 min 149 AED/ 90 min 199 AED)' },
-    { name: 'Brazilian Slimming Massage', price: '199', duration: '(60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Shiatsu Massage', price: '199', duration: '(60 min 199 AED/ 90 min 249 AED)' }
+export default function Blog() {
+  const blogPosts = [
+    {
+      id: 1,
+      title: 'Best Time to Book a Thai Massage at Home in Dubai',
+      date: 'June 25, 2025',
+      image: img1,
+      excerpt: "There's something incredibly comforting about ending a hectic day with a soothing Thai massage in the privacy of your own home. But do you know"
+    },
+    {
+      id: 2,
+      title: 'Benefits of Home Massage for Women in Dubai',
+      date: 'June 20, 2025',
+      image: img2,
+      excerpt: 'In the vibrant city of Dubai, where the pace of life never seems to slow down, finding peace and relaxation at home is precious for'
+    },
+    {
+      id: 3,
+      title: 'Why Home Massage in Dubai is Better Than Spa Visits',
+      date: 'June 15, 2025',
+      image: img3,
+      excerpt: 'Dubai is a city that never slows down. Between long work hours, traffic, social commitments, and the constant pressure to stay fit. Finding time'
+    },
+    {
+      id: 4,
+      title: 'Still Visiting Massage Places? Benefits of Home Massage in Dubai',
+      date: 'June 10, 2025',
+      image: img4,
+      excerpt: 'The last thing you would want to do is sit in traffic, after a long, exhausting day in Dubai, only to get a massage to'
+    },
+    {
+      id: 5,
+      title: 'What Are the Benefits of Deep Tissue Massage for Chronic Pain?',
+      date: 'June 5, 2025',
+      image: img5,
+      excerpt: 'Tired of pain that won\'t go? This blog explains the benefits of deep tissue massage for chronic pain and how to begin experiencing real relief'
+    },
+    {
+      id: 6,
+      title: 'What Is a Thai Massage and Its Benefits: A Complete Guide',
+      date: 'May 30, 2025',
+      image: img6,
+      excerpt: 'Have you ever wished for a physical reset button that could instantly melt away your stress and restore your energy levels? Thai massage is the'
+    }
   ]
 
   return (
@@ -44,28 +80,31 @@ export default function Packages() {
           <MobileMenu />
         </div>
 
-        <div className="packages-hero-section">
-          <div className="packages-hero-content">
-            <h1 className="packages-hero-title">Our Massage Packages Plans</h1>
+        <div className="blog-hero-section">
+          <div className="blog-hero-content">
+            <h1 className="blog-hero-title">Our Blog</h1>
           </div>
         </div>
       </header>
 
-      {/* Packages Section */}
-      <section className="packages-section">
-        <div className="packages-container">
-          <div className="packages-grid">
-            {packages.map((pkg, index) => (
-              <div key={index} className="package-item">
-                <div className="package-name">{pkg.name}</div>
-                <div className="package-details">
-                  <span className="package-price">{pkg.price} AED</span>
-                  <span className="package-duration">{pkg.duration}</span>
+      {/* Blog Section */}
+      <section className="blog-section">
+        <div className="blog-container">
+          <div className="blog-grid">
+            {blogPosts.map((post) => (
+              <article key={post.id} className="blog-card">
+                <div className="blog-image">
+                  <img src={post.image} alt={post.title} />
                 </div>
-              </div>
+                <div className="blog-content">
+                  <h3 className="blog-title">{post.title}</h3>
+                  <p className="blog-date">{post.date}</p>
+                  <p className="blog-excerpt">{post.excerpt}</p>
+                  <a href="#" className="read-more">Read More »</a>
+                </div>
+              </article>
             ))}
           </div>
-          <button className="contact-packages-btn">CONTACT US</button>
         </div>
       </section>
 
@@ -86,7 +125,7 @@ export default function Packages() {
                   <li><a href="/">Home</a></li>
                   <li><Link to="/about">About Us</Link></li>
                   <li><Link to="/packages">Our Packages</Link></li>
-                  <li><a href="#blog">Our Blogs</a></li>
+                  <li><Link to="/blog">Our Blogs</Link></li>
                   <li><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>

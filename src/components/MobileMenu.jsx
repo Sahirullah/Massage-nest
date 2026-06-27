@@ -33,14 +33,14 @@ export default function MobileMenu() {
         </div>
 
         <ul>
-          <li><a href="/" onClick={closeMenu}>Home</a></li>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
           <li className="mobile-dropdown-item">
             <ServiceDropdown />
           </li>
           <li><Link to="/packages" onClick={closeMenu}>Our Packages</Link></li>
-          <li><a href="#blog" onClick={closeMenu}>Our Blog</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact Us</a></li>
+          <li><Link to="/blog" onClick={closeMenu}>Our Blog</Link></li>
+          <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
         </ul>
 
         <button className="menu-book-btn" onClick={closeMenu}>BOOK AN APPOINTMENT →</button>

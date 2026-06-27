@@ -4,24 +4,9 @@ import heroSec from '../assets/Massage Service at Home in Dubai _ 149 AED_Hour_f
 import whatsappBtn from '../assets/Whatsapp-btn.avif'
 import ServiceDropdown from '../components/ServiceDropdown'
 import MobileMenu from '../components/MobileMenu'
-import './Packages.css'
+import './Contact.css'
 
-export default function Packages() {
-  const packages = [
-    { name: 'Full Body Relaxation Massage', price: '149', duration: '(60 min 149 AED/ 90 min 199 AED)' },
-    { name: 'Thai Massage', price: '199', duration: '( 60 min 199 AED / 90 min 249 AED)' },
-    { name: 'Swedish Massage', price: '149', duration: '(60 min 149 AED/ 90 min 199 AED)' },
-    { name: 'Deep Tissue Massage', price: '199', duration: '( 60 min 199 AED / 90 min 249 AED)' },
-    { name: 'Maderotherapy Massage', price: '199', duration: '( 60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Hot Oil Relaxation Massage', price: '175', duration: '(60 min 175 AED/ 90 min 225 AED)' },
-    { name: 'Lymphatic Drainage Massage', price: '199', duration: '( 60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Couple Relaxation Massage', price: '299', duration: '( 60 min couple massage 299 AED)' },
-    { name: 'Sport Massage', price: '199', duration: '(60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Lomi Lomi Massage', price: '149', duration: '( 60 min 149 AED/ 90 min 199 AED)' },
-    { name: 'Brazilian Slimming Massage', price: '199', duration: '(60 min 199 AED/ 90 min 249 AED)' },
-    { name: 'Shiatsu Massage', price: '199', duration: '(60 min 199 AED/ 90 min 249 AED)' }
-  ]
-
+export default function Contact() {
   return (
     <>
       <header className="header desktop-header" style={{ backgroundImage: `url(${heroSec})` }}>
@@ -37,35 +22,87 @@ export default function Packages() {
               <li><ServiceDropdown /></li>
               <li><Link to="/packages">OUR PACKAGES</Link></li>
               <li><Link to="/blog">OUR BLOG</Link></li>
-              <li><a href="#contact">CONTACT US</a></li>
-              <li><a href="#book" className="book-btn">BOOK NOW</a></li>
+              <li><Link to="/contact">CONTACT US</Link></li>
+              <li><a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
           <MobileMenu />
         </div>
 
-        <div className="packages-hero-section">
-          <div className="packages-hero-content">
-            <h1 className="packages-hero-title">Our Massage Packages Plans</h1>
+        <div className="contact-hero-section">
+          <div className="contact-hero-content">
+            <h1 className="contact-hero-title">Contact Us</h1>
           </div>
         </div>
       </header>
 
-      {/* Packages Section */}
-      <section className="packages-section">
-        <div className="packages-container">
-          <div className="packages-grid">
-            {packages.map((pkg, index) => (
-              <div key={index} className="package-item">
-                <div className="package-name">{pkg.name}</div>
-                <div className="package-details">
-                  <span className="package-price">{pkg.price} AED</span>
-                  <span className="package-duration">{pkg.duration}</span>
+      {/* Contact Section */}
+      <section className="contact-section">
+        <div className="contact-container">
+          <div className="contact-wrapper">
+            <div className="contact-info">
+              <h2>Get In Touch</h2>
+              <p>We'd love to hear from you. Whether you have a question about our services or want to book an appointment, feel free to reach out.</p>
+              
+              <div className="info-items">
+                <div className="info-item">
+                  <h4>📞 Phone</h4>
+                  <p><a href="tel:+971504480363">+971 50 448 0363</a></p>
+                </div>
+                
+                <div className="info-item">
+                  <h4>📧 Email</h4>
+                  <p><a href="mailto:shukrianhomespa@gmail.com">shukrianhomespa@gmail.com</a></p>
+                </div>
+                
+                <div className="info-item">
+                  <h4>📍 Address</h4>
+                  <p>Dubai, UAE</p>
+                </div>
+                
+                <div className="info-item">
+                  <h4>⏰ Hours</h4>
+                  <p>Monday - Sunday: 9:00 AM - 10:00 PM</p>
                 </div>
               </div>
-            ))}
+
+              <div className="social-section">
+                <h4>Follow Us</h4>
+                <div className="social-icons">
+                  <a href="#facebook" className="social-icon">f</a>
+                  <a href="#instagram" className="social-icon">📷</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="contact-form-wrapper">
+              <form className="contact-form">
+                <h2>Send us a Message</h2>
+                
+                <div className="form-group">
+                  <input type="text" placeholder="Your Name" required />
+                </div>
+                
+                <div className="form-group">
+                  <input type="email" placeholder="Your Email" required />
+                </div>
+                
+                <div className="form-group">
+                  <input type="tel" placeholder="Your Phone" required />
+                </div>
+                
+                <div className="form-group">
+                  <input type="text" placeholder="Service Interested In" />
+                </div>
+                
+                <div className="form-group">
+                  <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" className="submit-btn">SEND MESSAGE</button>
+              </form>
+            </div>
           </div>
-          <button className="contact-packages-btn">CONTACT US</button>
         </div>
       </section>
 
@@ -83,11 +120,11 @@ export default function Packages() {
               <div className="footer-col">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><a href="/">Home</a></li>
+                  <li><Link to="/">Home</Link></li>
                   <li><Link to="/about">About Us</Link></li>
                   <li><Link to="/packages">Our Packages</Link></li>
-                  <li><a href="#blog">Our Blogs</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
+                  <li><Link to="/blog">Our Blogs</Link></li>
+                  <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
               </div>
 
