@@ -42,12 +42,25 @@ function App() {
           
           <button 
             className="hamburger-btn" 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() => setMobileMenuOpen(true)}
+            style={{display: mobileMenuOpen ? 'none' : 'flex'}}
+            aria-label="Open menu"
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
+
+          {mobileMenuOpen && (
+            <button 
+              className="hamburger-btn"
+              onClick={() => setMobileMenuOpen(false)}
+              style={{display: mobileMenuOpen ? 'flex' : 'none', justifyContent: 'center', alignItems: 'center'}}
+              aria-label="Close menu"
+            >
+              ✕
+            </button>
+          )}
         </div>
 
         {mobileMenuOpen && (
@@ -79,32 +92,13 @@ function App() {
                 display: 'flex',
                 flexDirection: 'column',
                 overflow: 'auto',
-                boxShadow: '-3px 0 15px rgba(0,0,0,0.2)'
+                boxShadow: '-3px 0 15px rgba(0,0,0,0.2)',
+                animation: 'slideIn 0.3s ease-out'
               }}
             >
               <div style={{
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
-                padding: '1rem',
-                borderBottom: '1px solid #e0e0e0'
-              }}>
-                <button 
-                  onClick={() => setMobileMenuOpen(false)}
-                  style={{
-                    background: 'white',
-                    border: '2px solid #5a9a92',
-                    color: '#5a9a92',
-                    fontSize: '1.6rem',
-                    width: '40px',
-                    height: '40px',
-                    cursor: 'pointer',
-                    borderRadius: '2px'
-                  }}
-                >
-                  ✕
-                </button>
-              </div>
+                height: '0'
+              }}></div>
 
               <ul style={{
                 listStyle: 'none',
