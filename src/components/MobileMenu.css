@@ -1,326 +1,103 @@
-/* Mobile Menu Wrapper */
-.mobile-menu-wrapper {
+.mobile-hamburger {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .mobile-menu-wrapper {
-    display: block;
-    position: relative;
-    z-index: 2000;
-  }
-}
-
-/* Hamburger Button */
-.hamburger-btn {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
   width: 48px;
   height: 48px;
   background: transparent;
   border: 2px solid white;
+  z-index: 1000;
   cursor: pointer;
   padding: 0;
-  position: fixed;
-  border-radius: 4px;
-  z-index: 10000;
-  top: 1.5rem;
-  right: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .hamburger-btn {
-    display: flex !important;
-  }
-}
-
-.hamburger-btn span {
+.mobile-hamburger span {
+  display: block;
   width: 24px;
   height: 2px;
   background: white;
-  border-radius: 1px;
-  display: block;
-  transition: all 0.3s ease;
-  position: absolute;
+  margin: 4px 0;
+  transition: 0.3s;
 }
 
-.hamburger-btn span:nth-child(1) {
-  top: 14px;
-  transform: rotate(0) translate(0, 0);
-  opacity: 1;
+@media (max-width: 768px) {
+  .mobile-hamburger {
+    display: flex;
+  }
 }
 
-.hamburger-btn span:nth-child(2) {
-  top: 24px;
-  opacity: 1;
-}
-
-.hamburger-btn span:nth-child(3) {
-  top: 34px;
-  transform: rotate(0) translate(0, 0);
-  opacity: 1;
-}
-
-/* Open State - Transform to X */
-.hamburger-btn span.open:nth-child(1) {
-  transform: rotate(45deg) translate(10px, 10px);
-}
-
-.hamburger-btn span.open:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-btn span.open:nth-child(3) {
-  transform: rotate(-45deg) translate(9px, -9px);
-}
-
-/* Menu Overlay */
-.menu-overlay {
+.mobile-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 9998;
-  animation: fadeIn 0.3s ease;
-  cursor: pointer;
-  pointer-events: auto;
+  z-index: 999;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-
-/* Mobile Navigation */
-.mobile-nav {
+.mobile-menu {
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 85vw;
-  max-width: 400px;
+  right: 0;
+  width: 80vw;
+  max-width: 350px;
   height: 100vh;
   background: white;
-  z-index: 9999;
-  transition: right 0.3s ease;
+  z-index: 1001;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   overflow-y: auto;
-  overflow-x: hidden;
-  box-shadow: -3px 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.mobile-nav.open {
-  right: 0;
-}
-
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: white;
-  border: 2px solid #5a9a92;
-  color: #5a9a92;
-  font-size: 1.6rem;
+.mobile-close {
+  align-self: flex-end;
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid #5a9a92;
+  background: white;
+  color: #5a9a92;
   cursor: pointer;
-  border-radius: 2px;
-  padding: 0;
-  z-index: 100;
-  line-height: 1;
-  transition: all 0.3s;
-  user-select: none;
-  pointer-events: auto;
-  outline: none;
-  margin: 0;
-}
-
-.close-btn:hover,
-.close-btn:active {
-  background: #5a9a92;
-  color: white;
-}
-
-/* Menu Top Container */
-.menu-top {
-  position: relative;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #e0e0e0;
-  background: white;
-  flex-shrink: 0;
-}
-
-/* Menu Header */
-.menu-header {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0;
-  background: white;
-  flex-shrink: 0;
-  flex: 1;
+  margin-bottom: 1rem;
 }
 
-.menu-logo {
-  height: 40px;
-  width: auto;
-}
-
-/* Menu List */
-.mobile-nav ul {
-  list-style: none;
+.mobile-menu nav {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
   flex: 1;
 }
 
-.mobile-nav ul li {
-  border-bottom: 1px solid #e0e0e0;
-  padding: 0;
-  margin: 0;
-}
-
-.mobile-nav ul li:last-child {
-  border-bottom: none;
-}
-
-.mobile-nav ul li a {
-  display: block;
-  padding: 0.8rem 1rem;
+.mobile-menu a {
+  padding: 1rem;
   color: #5a9a92;
   text-decoration: none;
-  font-size: 0.85rem;
+  border-bottom: 1px solid #e0e0e0;
   font-weight: 500;
-  text-transform: capitalize;
-  transition: all 0.3s;
-  background: white;
-  cursor: pointer;
-  word-wrap: break-word;
 }
 
-.mobile-nav ul li a:hover {
+.mobile-menu a:hover {
   background: #f5f5f5;
-  color: #205B4F;
-  padding-left: 1.3rem;
 }
 
-/* Mobile Dropdown Item */
-.mobile-dropdown-item {
-  padding: 0 !important;
-  border-bottom: 1px solid #e0e0e0 !important;
-}
-
-.mobile-dropdown-item button,
-.mobile-dropdown-item a {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  text-align: left;
-  color: #5a9a92;
-  font-size: 0.85rem;
-  background: white;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-/* Book Button in Menu */
-.menu-book-btn {
+.mobile-book {
   background: #c9a961;
   color: #205B4F;
   border: none;
-  padding: 0.8rem 1rem;
-  font-size: 0.75rem;
+  padding: 1rem;
   font-weight: 700;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  border-radius: 2px;
   cursor: pointer;
-  transition: all 0.3s;
-  margin: 1rem;
-  width: calc(100% - 2rem);
-  flex-shrink: 0;
+  margin-top: auto;
 }
 
-.menu-book-btn:hover {
+.mobile-book:hover {
   background: #b89548;
-  transform: translateY(-2px);
-}
-
-/* Responsive for very small screens */
-@media (max-width: 480px) {
-  .hamburger-btn {
-    width: 42px;
-    height: 42px;
-    border: 1.5px solid white;
-    top: 1.2rem;
-    right: 1.2rem;
-  }
-
-  .hamburger-btn span {
-    width: 20px;
-    height: 2px;
-  }
-
-  .hamburger-btn span:nth-child(1) {
-    top: 12px;
-  }
-
-  .hamburger-btn span:nth-child(2) {
-    top: 21px;
-  }
-
-  .hamburger-btn span:nth-child(3) {
-    top: 30px;
-  }
-
-  .mobile-nav {
-    width: 90vw;
-    max-width: 350px;
-    right: -100%;
-  }
-
-  .close-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 1.3rem;
-    top: 0.8rem;
-    right: 0.8rem;
-  }
-
-  .menu-header {
-    padding: 0.8rem;
-  }
-
-  .menu-logo {
-    height: 32px;
-  }
-
-  .mobile-nav ul li a {
-    padding: 0.7rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .menu-book-btn {
-    margin: 0.8rem;
-    width: calc(100% - 1.6rem);
-    padding: 0.7rem 0.8rem;
-    font-size: 0.7rem;
-  }
 }

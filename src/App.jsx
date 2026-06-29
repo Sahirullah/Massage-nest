@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import logo from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/logo.png'
 import heroSec from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/hero-sec.png'
 import img1 from './assets/Massage Service at Home in Dubai _ 149 AED_Hour_files/1.jpg'
@@ -15,10 +16,10 @@ import beautyIcon from './assets/beauty.png'
 import massageIcon from './assets/massage.png'
 import whatsappBtn from './assets/Whatsapp-btn.avif'
 import ServiceDropdown from './components/ServiceDropdown'
-import MobileMenu from './components/MobileMenu'
 import './App.css'
 
 function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <>
       <header className="header" style={{backgroundImage: `url(${heroSec})`}}>
@@ -38,8 +39,107 @@ function App() {
               <li><a href="https://wa.me/971504480363" target="_blank" rel="noopener noreferrer" className="book-btn">BOOK NOW</a></li>
             </ul>
           </nav>
-          <MobileMenu />
+          
+          <button 
+            className="hamburger-btn" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+
+        {mobileMenuOpen && (
+          <>
+            <div 
+              className="mobile-menu-overlay" 
+              onClick={() => setMobileMenuOpen(false)}
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: 'rgba(0,0,0,0.5)',
+                zIndex: 999
+              }}
+            ></div>
+            <nav 
+              className="mobile-menu-panel"
+              style={{
+                position: 'fixed',
+                top: 0,
+                right: 0,
+                width: '85vw',
+                maxWidth: '400px',
+                height: '100vh',
+                background: 'white',
+                zIndex: 1000,
+                display: 'flex',
+                flexDirection: 'column',
+                overflow: 'auto',
+                boxShadow: '-3px 0 15px rgba(0,0,0,0.2)'
+              }}
+            >
+              <div style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+                padding: '1rem',
+                borderBottom: '1px solid #e0e0e0'
+              }}>
+                <button 
+                  onClick={() => setMobileMenuOpen(false)}
+                  style={{
+                    background: 'white',
+                    border: '2px solid #5a9a92',
+                    color: '#5a9a92',
+                    fontSize: '1.6rem',
+                    width: '40px',
+                    height: '40px',
+                    cursor: 'pointer',
+                    borderRadius: '2px'
+                  }}
+                >
+                  ✕
+                </button>
+              </div>
+
+              <ul style={{
+                listStyle: 'none',
+                display: 'flex',
+                flexDirection: 'column',
+                padding: 0,
+                margin: 0,
+                flex: 1
+              }}>
+                <li style={{borderBottom: '1px solid #e0e0e0'}}><Link to="/" onClick={() => setMobileMenuOpen(false)} style={{display: 'block', padding: '1rem', color: '#5a9a92', textDecoration: 'none'}}>Home</Link></li>
+                <li style={{borderBottom: '1px solid #e0e0e0'}}><Link to="/about" onClick={() => setMobileMenuOpen(false)} style={{display: 'block', padding: '1rem', color: '#5a9a92', textDecoration: 'none'}}>About Us</Link></li>
+                <li style={{borderBottom: '1px solid #e0e0e0', padding: 0}}><ServiceDropdown /></li>
+                <li style={{borderBottom: '1px solid #e0e0e0'}}><Link to="/packages" onClick={() => setMobileMenuOpen(false)} style={{display: 'block', padding: '1rem', color: '#5a9a92', textDecoration: 'none'}}>Our Packages</Link></li>
+                <li style={{borderBottom: '1px solid #e0e0e0'}}><Link to="/blog" onClick={() => setMobileMenuOpen(false)} style={{display: 'block', padding: '1rem', color: '#5a9a92', textDecoration: 'none'}}>Our Blog</Link></li>
+                <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)} style={{display: 'block', padding: '1rem', color: '#5a9a92', textDecoration: 'none'}}>Contact Us</Link></li>
+              </ul>
+
+              <button 
+                onClick={() => setMobileMenuOpen(false)}
+                style={{
+                  background: '#c9a961',
+                  color: '#205B4F',
+                  border: 'none',
+                  padding: '1rem 1.5rem',
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  margin: '1.5rem',
+                  cursor: 'pointer'
+                }}
+              >
+                BOOK AN APPOINTMENT →
+              </button>
+            </nav>
+          </>
+        )}
 
         <div className="hero-section">
           <div className="hero-content">
