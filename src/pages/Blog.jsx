@@ -100,7 +100,7 @@ export default function Blog() {
                   <h3 className="blog-title">{post.title}</h3>
                   <p className="blog-date">{post.date}</p>
                   <p className="blog-excerpt">{post.excerpt}</p>
-                  <a href="#" className="read-more">Read More »</a>
+                  <a href={`/blog/${post.id}`} className="read-more">Read More »</a>
                 </div>
               </article>
             ))}
